@@ -10,5 +10,5 @@ export default defineConfig({
     },
   },
   root: 'src',
-  base: '/medtable/'
+  base: '/medcard/'
 });
