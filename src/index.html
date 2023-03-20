@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+  <div class="header">header</div>
+  <div class="wrapper">
+    <div class="medcard">
+      <!--   верхние табы   -->
+      <div class="medcard_tabs">
+        <div class="medcard_tabs__item active">Пациенты</div>
+        <div class="medcard_tabs__item">История</div>
+      </div>
+      <!--   боковое меню   -->
+      <div class="medcard_aside">
+        <ul class="medcard_aside__list">
+          <li class="medcard_aside__item active">
+            <svg width="24" height="24" class="medcard_aside__item_icon">
+              <use href="img/icons/sprite.svg#icon1" />
+            </svg>
+          </li>
+          <li class="medcard_aside__item">
+            <svg width="24" height="24" class="medcard_aside__item_icon">
+              <use href="img/icons/sprite.svg#icon2" />
+            </svg>
+          </li>
+          <li class="medcard_aside__item">
+            <svg width="24" height="24" class="medcard_aside__item_icon">
+              <use href="img/icons/sprite.svg#icon3" />
+            </svg>
+          </li>
+          <li class="medcard_aside__item">
+            <svg width="24" height="24" class="medcard_aside__item_icon">
+              <use href="img/icons/sprite.svg#icon4" />
+            </svg>
+          </li>
+          <li class="medcard_aside__item">
+            <svg width="24" height="24" class="medcard_aside__item_icon">
+              <use href="img/icons/sprite.svg#icon5" />
+            </svg>
+          </li>
+          <li class="medcard_aside__item">
+            <svg width="24" height="24" class="medcard_aside__item_icon">
+              <use href="img/icons/sprite.svg#icon6" />
+            </svg>
+          </li>
+          <li class="medcard_aside__item">
+            <svg width="24" height="24" class="medcard_aside__item_icon">
+              <use href="img/icons/sprite.svg#icon7" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="medcard_content">
+        <!--   поиск в карточке   -->
+<!--        <div class="medcard_search">-->
+<!--          <form class="medcard_search__form">-->
+<!--            <input type="text">-->
+<!--          </form>-->
+<!--        </div>-->
+
+        <ul class="medcard_content__topinfo">
+          <li class="medcard_content__topinfo_item">
+            <div class="medcard_content__topinfo_label">Карта №:</div>
+            <div class="medcard_content__topinfo_content">9969438894</div>
+          </li>
+          <li class="medcard_content__topinfo_item">
+            <div class="medcard_content__topinfo_label">1-е посещение:</div>
+            <div class="medcard_content__topinfo_content">08.02.2023</div>
+          </li>
+          <li class="medcard_content__topinfo_item">
+            <div class="medcard_content__topinfo_label">Лояльность:</div>
+            <div class="medcard_content__topinfo_content">Повторный</div>
+          </li>
+          <li class="medcard_content__topinfo_item">
+            <div class="medcard_content__topinfo_content">
+              <a href="#">Документы</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="medcard_content__info">
+          <div class="medcard_content__avatar">
+            <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_content__avatar_image">
+          </div>
+          <h3 class="medcard_content__profile_name">Гущин Ричард Афанасьевич</h3>
+          <div class="medcard_content__profile_data">
+            <div class="medcard_content__profile_gender">
+              <svg width="20" height="20" class="medcard_content__profile_icon">
+                <use href="img/icons/sprite.svg#mars" />
+              </svg>
+<!--              <svg width="20" height="20" class="medcard_aside__item_icon">-->
+<!--                <use href="img/icons/sprite.svg#venus" />-->
+<!--              </svg>-->
+            </div>
+            <div class="medcard_content__profile_age">08.08.1999 (23 года)</div>
+          </div>
+
+        </div>
+
+        <!-- тогглим класс adaptive_mode, для адптивной таблицы -->
+        <div class="medcard_table adaptive_mode">
+          <div class="medcard__title">Активные диагнозы</div>
+          <div class="medcard_table__content" >
+            <div class="medcard_table__row medcard_table__row--head">
+              <div class="medcard_table__cell">Диагноз</div>
+              <div class="medcard_table__cell">Страховой диагноз</div>
+              <div class="medcard_table__cell">Врач</div>
+              <div class="medcard_table__cell">Прогресс</div>
+              <div class="medcard_table__cell">Изменения</div>
+            </div>
+
+            <div class="medcard_table__row medcard_table__row--body">
+              <div class="medcard_table__cell" data-th="Диагноз">
+                <div class="medcard_table__cell_inner">
+                  <span class="medcard_table__diagnosis_code">004</span>
+                  <span class="medcard_table__diagnosis_value">Холера</span>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+              <div class="medcard_table__cell" data-th="Врач">
+                <div class="medcard_table__cell_inner">
+                  <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
+                  <span class="medcard_table__spec">Терапия</span>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+            </div>
+
+            <div class="medcard_table__row medcard_table__row--body">
+              <div class="medcard_table__cell" data-th="Диагноз">
+                <div class="medcard_table__cell_inner">
+                  <span class="medcard_table__diagnosis_code">004</span>
+                  <span class="medcard_table__diagnosis_value">Холера</span>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+              <div class="medcard_table__cell" data-th="Врач">
+                <div class="medcard_table__cell_inner">
+                  <div class="medcard_table__doc">Погодина</div>
+                  <div class="medcard_table__spec">Терапия</div>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+            </div>
+
+            <div class="medcard_table__row medcard_table__row--body">
+              <div class="medcard_table__cell" data-th="Диагноз">
+                <div class="medcard_table__cell_inner">
+                  <span class="medcard_table__diagnosis_code">004</span>
+                  <span class="medcard_table__diagnosis_value">Холера</span>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+              <div class="medcard_table__cell" data-th="Врач">
+                <div class="medcard_table__cell_inner">
+                  <div class="medcard_table__doc">Погодина</div>
+                  <div class="medcard_table__spec">Терапия</div>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+            </div>
+
+            <div class="medcard_table__row medcard_table__row--body">
+              <div class="medcard_table__cell" data-th="Диагноз">
+                <div class="medcard_table__cell_inner">
+                  <span class="medcard_table__diagnosis_code">004</span>
+                  <span class="medcard_table__diagnosis_value">Холера</span>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+              <div class="medcard_table__cell" data-th="Врач">
+                <div class="medcard_table__cell_inner">
+                  <div class="medcard_table__doc">Погодина</div>
+                  <div class="medcard_table__spec">Терапия</div>
+                </div>
+              </div>
+              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="medcard_comments">
+          <div class="medcard__title">
+            Комментарии
+            <svg width="24" height="24" class="medcard_comments__icon">
+              <use href="img/icons/sprite.svg#circle-plus" />
+            </svg>
+          </div>
+          <div class="medcard_comments__list">
+            <div class="medcard_comments__item">
+              <div class="medcard_comments__content">
+                <div class="medcard_comments__date">19.12.2023</div>
+                <div class="medcard_comments__author">
+                  <div class="medcard_comments__avatar">
+                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                  </div>
+                  <div class="medcard_comments__name">Support</div>
+                  <div class="medcard_comments__type">Неврология</div>
+                </div>
+                <div class="medcard_comments__value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem fugiat sit. Illo odit officia rem unde. A adipisci ali sit. Illo odit officia rem unde. A adipisci ali</div>
+              </div>
+            </div>
+
+            <div class="medcard_comments__item">
+              <div class="medcard_comments__content">
+                <div class="medcard_comments__date">19.12.2023</div>
+                <div class="medcard_comments__author">
+                  <div class="medcard_comments__avatar">
+                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                  </div>
+                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                  <div class="medcard_comments__type">Неврология</div>
+                </div>
+                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+
+            <div class="medcard_comments__item">
+              <div class="medcard_comments__content">
+                <div class="medcard_comments__date">19.12.2023</div>
+                <div class="medcard_comments__author">
+                  <div class="medcard_comments__avatar">
+                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                  </div>
+                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                  <div class="medcard_comments__type">Неврология</div>
+                </div>
+                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+
+            <div class="medcard_comments__item">
+              <div class="medcard_comments__content">
+                <div class="medcard_comments__date">19.12.2023</div>
+                <div class="medcard_comments__author">
+                  <div class="medcard_comments__avatar">
+                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                  </div>
+                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                  <div class="medcard_comments__type">Неврология</div>
+                </div>
+                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+
+            <div class="medcard_comments__item">
+              <div class="medcard_comments__content">
+                <div class="medcard_comments__date">19.12.2023</div>
+                <div class="medcard_comments__author">
+                  <div class="medcard_comments__avatar">
+                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                  </div>
+                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                  <div class="medcard_comments__type">Неврология</div>
+                </div>
+                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

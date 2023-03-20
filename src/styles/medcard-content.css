@@ -1,0 +1,67 @@
+.medcard_content__info {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr 1fr;
+	column-gap: 14px;
+	padding: 8px;
+	border: 1px solid #ebebeb;
+	border-radius: 6px;
+	container: profile / inline-size;
+}
+
+.medcard_content__avatar {
+	width: 70px;
+	height: 70px;
+	border-radius: 4px;
+	overflow: hidden;
+	grid-row: span 2;
+}
+
+.medcard_content__avatar_image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.medcard_content__profile_data {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 13px;
+	font-style: italic;
+	color: #658fa6;
+}
+
+.medcard_content__profile_name {
+	font-size: 16px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+
+.medcard_content__profile_gender {
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+}
+
+.medcard_content__profile_icon {
+	fill: #000;
+}
+
+@container profile (max-width: 500px) {
+	.medcard_content__profile_name {
+		font-size: 12px;
+	}
+
+	.medcard_content__avatar {
+		width: 40px;
+		height: 40px;
+	}
+
+	.medcard_content__profile_icon {
+		width: 16px;
+		height: 16px;
+	}
+}
+

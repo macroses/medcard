@@ -1,0 +1,20 @@
+<svg class="SchedulePan_hourglass__LoqkB" fill-rule="nonzero" width="24" height="24" viewBox="0 0 24 24">
+    <g>
+        <ellipse cx="8.5" cy="8.333" rx="1" ry="1"></ellipse>
+        <ellipse cx="9.633" cy="7.222" rx="1" ry="1"></ellipse>
+        <ellipse cx="7.367" cy="7.222" rx="1" ry="1"></ellipse>
+        <ellipse cx="6.233" cy="7.222" rx="1" ry="1"></ellipse>
+        <ellipse cx="10.767" cy="7.222" rx="1" ry="1"></ellipse>
+        <ellipse cx="11.9" cy="7.222" rx="1" ry="1"></ellipse>
+        <ellipse cx="5.1" cy="7.222" rx="1" ry="1"></ellipse>
+        <ellipse cx="8.5" cy="7.222" rx="1" ry="1"></ellipse>
+        <ellipse cx="8.5" cy="11.667" rx="1" ry="1"></ellipse>
+        <ellipse cx="8.5" cy="12.778" rx="1" ry="1"></ellipse>
+        <ellipse cx="8.5" cy="13.889" rx="1" ry="1"></ellipse>
+        <ellipse cx="8.5" cy="15" rx="1" ry="1"></ellipse>
+        <ellipse cx="8.5" cy="15" rx="1" ry="1"></ellipse>
+        <ellipse cx="8.5" cy="16.111" rx="1" ry="1"></ellipse>
+        <path stroke-width=".2"
+              d="M16.66 19.333h-1.02V18h-1.7v-3.407c0-.9-.456-1.736-1.22-2.236L9.113 10l3.607-2.357a2.668 2.668 0 0 0 1.22-2.236V2h1.7V.667h1.02c.188 0 .34-.15.34-.334A.337.337 0 0 0 16.66 0H.34A.337.337 0 0 0 0 .333c0 .185.152.334.34.334h1.02V2h1.7v3.407c0 .9.456 1.736 1.22 2.236L7.887 10 4.28 12.357a2.668 2.668 0 0 0-1.22 2.236V18h-1.7v1.333H.34a.337.337 0 0 0-.34.334c0 .184.152.333.34.333h16.32c.188 0 .34-.149.34-.333a.337.337 0 0 0-.34-.334zm-14.62-18V.667h12.92v.666H2.04zm2.617 5.755a2.007 2.007 0 0 1-.917-1.68V2h9.52v3.407c0 .677-.343 1.305-.917 1.681L8.5 9.599 4.657 7.088zm-.917 7.505c0-.677.343-1.305.917-1.681L8.5 10.401l3.843 2.511c.574.376.917 1.004.917 1.68V18H3.74v-3.407zm-1.7 4.074h12.92v.666H2.04v-.666z"></path>
+    </g>
+</svg>

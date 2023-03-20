@@ -1,0 +1,28 @@
+.medcard_aside {
+	background-color: #20303d;
+}
+
+.medcard_aside__list {
+	padding-top: 15px;
+}
+
+.medcard_aside__item {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.medcard_aside__item:hover .medcard_aside__item_icon {
+	fill: #f5f8fa;
+}
+
+.medcard_aside__item.active .medcard_aside__item_icon {
+	fill: #f5f8fa;
+}
+
+.medcard_aside__item_icon {
+	fill: #a2abb0;
+	transition: fill 0.2s;
+}

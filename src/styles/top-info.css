@@ -1,0 +1,44 @@
+.medcard_content__topinfo {
+	font-size: 12px;
+	display: flex;
+	width: 100%;
+	gap: 20px;
+	container: topinfo / inline-size;
+	overflow: auto;
+	padding-bottom: 6px;
+}
+
+.medcard_content__topinfo_item {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	position: relative;
+}
+
+.medcard_content__topinfo_item:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	right: -10px;
+	width: 1px;
+	height: 20px;
+	background: lightgray;
+}
+
+.medcard_content__topinfo_label {
+	font-weight: 600;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+.medcard_content__topinfo_content {
+	color: #658fa6;
+}
+
+@container topinfo (max-width: 650px) {
+	.medcard_content__topinfo_item {
+		gap: 0;
+		font-size: 10px;
+	}
+}

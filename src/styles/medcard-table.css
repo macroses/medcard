@@ -1,0 +1,98 @@
+.medcard_table__content {
+	overflow: auto;
+	border: 1px solid #ebebeb;
+	border-radius: 4px;
+	max-height: calc(50vh - 160px);
+}
+
+.medcard_table__row {
+	display: grid;
+	font-size: 10px;
+	padding: 8px;
+	gap: 8px;
+	grid-template-columns: minmax(200px, 1fr) 100px 200px 60px 70px;
+	color: #525456;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.medcard_table__row.medcard_table__row--head {
+	background-color: #F1F7F9;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+.medcard_table__row.medcard_table__row--body {
+	font-size: 11px;
+}
+
+.medcard_table__body .medcard_table__row:hover {
+	cursor: pointer;
+	background-color: #ebebeb;
+}
+
+.medcard_table__spec {
+	color: #0047BB;
+}
+
+.medcard_table__cell {
+	display: flex;
+	align-items: center;
+	column-gap: 4px;
+}
+
+.medcard_table__diagnosis_code {
+	color: #0047BB;
+	position: relative;
+	padding-left: 16px;
+}
+
+.medcard_table__diagnosis_code::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: purple;
+	top: calc(50% - 4px);
+	left: 0;
+}
+
+.medcard__title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+
+
+/* адаптивный режим */
+.adaptive_mode .medcard_table__row--head{
+	display: none;
+}
+
+.adaptive_mode .medcard_table__row {
+	grid-template-columns: 1fr;
+	border: 1px solid lightgray;
+}
+
+.adaptive_mode .medcard_table__cell {
+	justify-content: space-between;
+	text-align: right;
+}
+
+.adaptive_mode .medcard_table__cell::before {
+	content: attr(data-th)": ";
+	font-weight: bold;
+	width: 40%;
+	text-align: left;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.adaptive_mode .medcard_table__cell_inner {
+	display: flex;
+	flex-direction: column;
+}

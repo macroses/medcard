@@ -1,0 +1,27 @@
+.medcard {
+	display: grid;
+	grid-template-columns: 40px calc(100% - 48px);
+	grid-template-rows: auto 1fr;
+	grid-template-areas: "aside header" "aside content";
+	column-gap: 8px;
+	height: calc(100vh - 72px);
+}
+
+.medcard_tabs {
+	grid-area: header;
+	padding-top: 8px;
+}
+
+.medcard_content {
+	grid-area: content;
+	border: 1px solid #ebebeb;
+	padding: 8px;
+	border-top-left-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.medcard_aside {
+	grid-area: aside;
+}
