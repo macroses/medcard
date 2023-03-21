@@ -37,6 +37,14 @@
 	grid-template-rows: 1fr;
 }
 
+/*.collapse.active .medcard_table__content {*/
+/*	border: 1px solid #000000;*/
+/*}*/
+
+/*.collapse .medcard_table__content {*/
+/*	border: none;*/
+/*}*/
+
 .collapse__item {
 	min-height: 0;
 	transition: visibility 1s;

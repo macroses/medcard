@@ -73,6 +73,17 @@
 	cursor: pointer;
 	height: 24px;
 	width: 24px;
+	display: flex;
+	border-radius: 50%;
+	place-items: center;
+}
+
+.medcard__collapse_btn:hover {
+	background-color: #ebebeb;
+}
+
+.medcard__collapse_icon {
+	fill: #8e8e8e;
 }
 
 /* адаптивный режим */
