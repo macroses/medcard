@@ -104,166 +104,189 @@
         </div>
 
         <!-- тогглим класс adaptive_mode, для адптивной таблицы -->
-        <div class="medcard_table">
-          <div class="medcard__title">Активные диагнозы</div>
-          <div class="medcard_table__content" >
-            <div class="medcard_table__row medcard_table__row--head">
-              <div class="medcard_table__cell">Диагноз</div>
-              <div class="medcard_table__cell">Страховой диагноз</div>
-              <div class="medcard_table__cell">Врач</div>
-              <div class="medcard_table__cell">Прогресс</div>
-              <div class="medcard_table__cell">Изменения</div>
-            </div>
+        <!-- collapse__wrap можно будет убрать в реакте. Лишний класс, для нахождения нужного элемента в нативном js -->
+        <div class="medcard_table collapse__wrap">
+          <div class="medcard__title">
+            <button class="medcard__collapse_btn ">
+              <svg width="24" height="24" class="medcard__collapse_icon">
+                <!--  меняем на angle-up -->
+                <use href="img/icons/sprite.svg#angle-down" />
+              </svg>
+            </button>
+            Активные диагнозы
+          </div>
 
-            <div class="medcard_table__row medcard_table__row--body">
-              <div class="medcard_table__cell" data-th="Диагноз">
-                <div class="medcard_table__cell_inner">
-                  <span class="medcard_table__diagnosis_code">004</span>
-                  <span class="medcard_table__diagnosis_value">Холера</span>
-                </div>
+          <div class="medcard_table__wrap collapse active">
+            <div class="medcard_table__content collapse__item" >
+              <div class="medcard_table__row medcard_table__row--head">
+                <div class="medcard_table__cell">Диагноз</div>
+                <div class="medcard_table__cell">Страховой диагноз</div>
+                <div class="medcard_table__cell">Врач</div>
+                <div class="medcard_table__cell">Прогресс</div>
+                <div class="medcard_table__cell">Изменения</div>
               </div>
-              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-              <div class="medcard_table__cell" data-th="Врач">
-                <div class="medcard_table__cell_inner">
-                  <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
-                  <span class="medcard_table__spec">Терапия</span>
-                </div>
-              </div>
-              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-            </div>
 
-            <div class="medcard_table__row medcard_table__row--body">
-              <div class="medcard_table__cell" data-th="Диагноз">
-                <div class="medcard_table__cell_inner">
-                  <span class="medcard_table__diagnosis_code">004</span>
-                  <span class="medcard_table__diagnosis_value">Холера</span>
+              <div class="medcard_table__row medcard_table__row--body">
+                <div class="medcard_table__cell" data-th="Диагноз">
+                  <div class="medcard_table__cell_inner">
+                    <span class="medcard_table__diagnosis_code">004</span>
+                    <span class="medcard_table__diagnosis_value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores ducimus facere iusto laboriosam nemo, neque sit tempore voluptas voluptatibus.</span>
+                  </div>
                 </div>
-              </div>
-              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-              <div class="medcard_table__cell" data-th="Врач">
-                <div class="medcard_table__cell_inner">
-                  <div class="medcard_table__doc">Погодина</div>
-                  <div class="medcard_table__spec">Терапия</div>
+                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                <div class="medcard_table__cell" data-th="Врач">
+                  <div class="medcard_table__cell_inner">
+                    <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
+                    <span class="medcard_table__spec">Терапия</span>
+                  </div>
                 </div>
+                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
               </div>
-              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-            </div>
 
-            <div class="medcard_table__row medcard_table__row--body">
-              <div class="medcard_table__cell" data-th="Диагноз">
-                <div class="medcard_table__cell_inner">
-                  <span class="medcard_table__diagnosis_code">004</span>
-                  <span class="medcard_table__diagnosis_value">Холера</span>
+              <div class="medcard_table__row medcard_table__row--body">
+                <div class="medcard_table__cell" data-th="Диагноз">
+                  <div class="medcard_table__cell_inner">
+                    <span class="medcard_table__diagnosis_code">004</span>
+                    <span class="medcard_table__diagnosis_value">Холера</span>
+                  </div>
                 </div>
-              </div>
-              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-              <div class="medcard_table__cell" data-th="Врач">
-                <div class="medcard_table__cell_inner">
-                  <div class="medcard_table__doc">Погодина</div>
-                  <div class="medcard_table__spec">Терапия</div>
+                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                <div class="medcard_table__cell" data-th="Врач">
+                  <div class="medcard_table__cell_inner">
+                    <div class="medcard_table__doc">Погодина</div>
+                    <div class="medcard_table__spec">Терапия</div>
+                  </div>
                 </div>
+                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
               </div>
-              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-            </div>
 
-            <div class="medcard_table__row medcard_table__row--body">
-              <div class="medcard_table__cell" data-th="Диагноз">
-                <div class="medcard_table__cell_inner">
-                  <span class="medcard_table__diagnosis_code">004</span>
-                  <span class="medcard_table__diagnosis_value">Холера</span>
+              <div class="medcard_table__row medcard_table__row--body">
+                <div class="medcard_table__cell" data-th="Диагноз">
+                  <div class="medcard_table__cell_inner">
+                    <span class="medcard_table__diagnosis_code">004</span>
+                    <span class="medcard_table__diagnosis_value">Холера</span>
+                  </div>
                 </div>
-              </div>
-              <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-              <div class="medcard_table__cell" data-th="Врач">
-                <div class="medcard_table__cell_inner">
-                  <div class="medcard_table__doc">Погодина</div>
-                  <div class="medcard_table__spec">Терапия</div>
+                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                <div class="medcard_table__cell" data-th="Врач">
+                  <div class="medcard_table__cell_inner">
+                    <div class="medcard_table__doc">Погодина</div>
+                    <div class="medcard_table__spec">Терапия</div>
+                  </div>
                 </div>
+                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
               </div>
-              <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-              <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+
+              <div class="medcard_table__row medcard_table__row--body">
+                <div class="medcard_table__cell" data-th="Диагноз">
+                  <div class="medcard_table__cell_inner">
+                    <span class="medcard_table__diagnosis_code">004</span>
+                    <span class="medcard_table__diagnosis_value">Холера</span>
+                  </div>
+                </div>
+                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                <div class="medcard_table__cell" data-th="Врач">
+                  <div class="medcard_table__cell_inner">
+                    <div class="medcard_table__doc">Погодина</div>
+                    <div class="medcard_table__spec">Терапия</div>
+                  </div>
+                </div>
+                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+              </div>
             </div>
           </div>
+
+
         </div>
 
-        <div class="medcard_comments">
+        <!-- collapse__wrap можно будет убрать в реакте. Лишний класс, для нахождения нужного элемента в нативном js -->
+        <div class="medcard_comments collapse__wrap">
           <div class="medcard__title">
+            <button class="medcard__collapse_btn">
+              <svg width="24" height="24" class="medcard__collapse_icon">
+                <!--  меняем на angle-up -->
+                <use href="img/icons/sprite.svg#angle-down" />
+              </svg>
+            </button>
             Комментарии
             <svg width="24" height="24" class="medcard_comments__icon">
               <use href="img/icons/sprite.svg#circle-plus" />
             </svg>
           </div>
-          <div class="medcard_comments__list">
-            <div class="medcard_comments__item">
-              <div class="medcard_comments__content">
-                <div class="medcard_comments__date">19.12.2023</div>
-                <div class="medcard_comments__author">
-                  <div class="medcard_comments__avatar">
-                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+          <div class="medcard_comments_wrap collapse">
+            <div class="medcard_comments__list collapse__item">
+              <div class="medcard_comments__item">
+                <div class="medcard_comments__content">
+                  <div class="medcard_comments__date">19.12.2023</div>
+                  <div class="medcard_comments__author">
+                    <div class="medcard_comments__avatar">
+                      <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                    </div>
+                    <div class="medcard_comments__name">Support</div>
+                    <div class="medcard_comments__type">Неврология</div>
                   </div>
-                  <div class="medcard_comments__name">Support</div>
-                  <div class="medcard_comments__type">Неврология</div>
+                  <div class="medcard_comments__value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem fugiat sit. Illo odit officia rem unde. A adipisci ali sit. Illo odit officia rem unde. A adipisci ali</div>
                 </div>
-                <div class="medcard_comments__value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem fugiat sit. Illo odit officia rem unde. A adipisci ali sit. Illo odit officia rem unde. A adipisci ali</div>
               </div>
-            </div>
 
-            <div class="medcard_comments__item">
-              <div class="medcard_comments__content">
-                <div class="medcard_comments__date">19.12.2023</div>
-                <div class="medcard_comments__author">
-                  <div class="medcard_comments__avatar">
-                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+              <div class="medcard_comments__item">
+                <div class="medcard_comments__content">
+                  <div class="medcard_comments__date">19.12.2023</div>
+                  <div class="medcard_comments__author">
+                    <div class="medcard_comments__avatar">
+                      <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                    </div>
+                    <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                    <div class="medcard_comments__type">Неврология</div>
                   </div>
-                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
-                  <div class="medcard_comments__type">Неврология</div>
+                  <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
                 </div>
-                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
               </div>
-            </div>
 
-            <div class="medcard_comments__item">
-              <div class="medcard_comments__content">
-                <div class="medcard_comments__date">19.12.2023</div>
-                <div class="medcard_comments__author">
-                  <div class="medcard_comments__avatar">
-                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+              <div class="medcard_comments__item">
+                <div class="medcard_comments__content">
+                  <div class="medcard_comments__date">19.12.2023</div>
+                  <div class="medcard_comments__author">
+                    <div class="medcard_comments__avatar">
+                      <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                    </div>
+                    <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                    <div class="medcard_comments__type">Неврология</div>
                   </div>
-                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
-                  <div class="medcard_comments__type">Неврология</div>
+                  <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
                 </div>
-                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
               </div>
-            </div>
 
-            <div class="medcard_comments__item">
-              <div class="medcard_comments__content">
-                <div class="medcard_comments__date">19.12.2023</div>
-                <div class="medcard_comments__author">
-                  <div class="medcard_comments__avatar">
-                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+              <div class="medcard_comments__item">
+                <div class="medcard_comments__content">
+                  <div class="medcard_comments__date">19.12.2023</div>
+                  <div class="medcard_comments__author">
+                    <div class="medcard_comments__avatar">
+                      <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                    </div>
+                    <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                    <div class="medcard_comments__type">Неврология</div>
                   </div>
-                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
-                  <div class="medcard_comments__type">Неврология</div>
+                  <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
                 </div>
-                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
               </div>
-            </div>
 
-            <div class="medcard_comments__item">
-              <div class="medcard_comments__content">
-                <div class="medcard_comments__date">19.12.2023</div>
-                <div class="medcard_comments__author">
-                  <div class="medcard_comments__avatar">
-                    <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+              <div class="medcard_comments__item">
+                <div class="medcard_comments__content">
+                  <div class="medcard_comments__date">19.12.2023</div>
+                  <div class="medcard_comments__author">
+                    <div class="medcard_comments__avatar">
+                      <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_comments__avatar_image">
+                    </div>
+                    <div class="medcard_comments__name">Иванов Иван Иваныч</div>
+                    <div class="medcard_comments__type">Неврология</div>
                   </div>
-                  <div class="medcard_comments__name">Иванов Иван Иваныч</div>
-                  <div class="medcard_comments__type">Неврология</div>
+                  <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
                 </div>
-                <div class="medcard_comments__value">Lorem ipsum dolor sit amet</div>
               </div>
             </div>
           </div>

@@ -25,3 +25,19 @@
 .medcard_aside {
 	grid-area: aside;
 }
+
+.collapse {
+	display: grid;
+	grid-template-rows: 0fr;
+	overflow: hidden;
+	transition: grid-template-rows 0.2s;
+}
+
+.collapse.active {
+	grid-template-rows: 1fr;
+}
+
+.collapse__item {
+	min-height: 0;
+	transition: visibility 1s;
+}

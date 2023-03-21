@@ -65,5 +65,5 @@
 
 .medcard_comments__list {
 	overflow: auto;
-	max-height: calc(50vh - 160px);
+	max-height: calc(50vh - 320px);
 }
