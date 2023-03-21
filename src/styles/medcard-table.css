@@ -26,6 +26,7 @@
 .medcard_table__row.medcard_table__row--body {
 	font-size: 11px;
 	min-width: min-content;
+	padding: 2px 8px;
 }
 
 .medcard_table__body .medcard_table__row:hover {
