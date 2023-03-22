@@ -2,12 +2,12 @@
 	overflow: auto;
 	border: 1px solid #ebebeb;
 	border-radius: 4px;
-	max-height: 50vh;
+	max-height: calc(50vh - 160px);
 }
 
 .medcard_table__row {
 	display: grid;
-	font-size: 10px;
+	font-size: 1rem;
 	padding: 8px;
 	gap: 8px;
 	grid-template-columns: minmax(200px, 1fr) 100px 200px 60px 70px;
@@ -24,7 +24,7 @@
 }
 
 .medcard_table__row.medcard_table__row--body {
-	font-size: 11px;
+	font-size: 1.1rem;
 	min-width: min-content;
 	padding: 2px 8px;
 }
@@ -63,6 +63,7 @@
 
 .medcard__title {
 	display: flex;
+	font-size: 1.6rem;
 	align-items: center;
 	gap: 8px;
 }

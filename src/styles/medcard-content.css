@@ -27,13 +27,13 @@
 	display: flex;
 	align-items: center;
 	gap: 4px;
-	font-size: 13px;
+	font-size: 1.3rem;
 	font-style: italic;
 	color: #658fa6;
 }
 
 .medcard_content__profile_name {
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: 600;
 	display: flex;
 	align-items: center;
@@ -51,7 +51,7 @@
 
 @container profile (max-width: 500px) {
 	.medcard_content__profile_name {
-		font-size: 12px;
+		font-size: 1.2rem;
 	}
 
 	.medcard_content__avatar {

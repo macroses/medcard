@@ -24,6 +24,10 @@ a {
 	text-decoration: none;
 }
 
+html {
+	font-size: 12px;
+}
+
 html, body {
 	height: 100%;
 }

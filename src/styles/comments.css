@@ -24,13 +24,13 @@
 }
 
 .medcard_comments__date {
-	font-size: 11px;
+	font-size: 1.1rem;
 	font-weight: bold;
 	grid-column: span 2;
 }
 
 .medcard_comments__value {
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 .medcard_comments__author {
@@ -54,16 +54,33 @@
 }
 
 .medcard_comments__name {
-	font-size: 11px;
+	font-size: 1.1rem;
 	font-weight: bold;
 }
 
 .medcard_comments__type {
-	font-size: 11px;
+	font-size: 1.1rem;
 	color: #3470A1;
 }
 
 .medcard_comments__list {
 	overflow: auto;
-	max-height: calc(50vh - 320px);
+	max-height: calc(50vh - 220px);
+}
+
+.medcard_comments__input {
+	width: 100%;
+	resize: none;
+	border-color: #ebebeb;
+	height: 40px;
+	padding: 8px;
+}
+
+.medcard_comments__new_comment {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	padding: 16px;
+	border: 1px solid #ebebeb;
 }

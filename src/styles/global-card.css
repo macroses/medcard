@@ -37,15 +37,28 @@
 	grid-template-rows: 1fr;
 }
 
-/*.collapse.active .medcard_table__content {*/
-/*	border: 1px solid #000000;*/
-/*}*/
-
-/*.collapse .medcard_table__content {*/
-/*	border: none;*/
-/*}*/
-
 .collapse__item {
 	min-height: 0;
 	transition: visibility 1s;
+}
+
+.btn {
+	border: 1px solid lightgray;
+	background-color: #fcfcfc;
+	font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 8px 16px;
+	transition: background-color 0.2s;
+}
+
+.btn:hover {
+	background-color: #ebebeb;
+}
+
+.btn--medtable {
+	margin-top: 8px;
 }
