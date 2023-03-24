@@ -39,6 +39,7 @@
 
 .collapse__item {
 	min-height: 0;
+	overflow: auto;
 	transition: visibility 1s;
 }
 
@@ -61,4 +62,8 @@
 
 .btn--medtable {
 	margin-top: 8px;
+}
+
+.btn--comments {
+	margin-bottom: 8px;
 }

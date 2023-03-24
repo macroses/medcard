@@ -13,7 +13,7 @@
     <div class="medcard">
       <!--   верхние табы   -->
       <div class="medcard_tabs">
-        <div class="medcard_tabs__item active">Пациенты</div>
+        <div class="medcard_tabs__item active">Карта</div>
         <div class="medcard_tabs__item">История</div>
       </div>
       <!--   боковое меню   -->
@@ -23,36 +23,43 @@
             <svg width="24" height="24" class="medcard_aside__item_icon">
               <use href="img/icons/sprite.svg#icon1" />
             </svg>
+            <div class="medcard_aside__description">Карта</div>
           </li>
           <li class="medcard_aside__item">
             <svg width="24" height="24" class="medcard_aside__item_icon">
               <use href="img/icons/sprite.svg#icon2" />
             </svg>
+            <div class="medcard_aside__description">Ближайшие приемы</div>
           </li>
           <li class="medcard_aside__item">
             <svg width="24" height="24" class="medcard_aside__item_icon">
               <use href="img/icons/sprite.svg#icon3" />
             </svg>
+            <div class="medcard_aside__description">Протоколы специалистов</div>
           </li>
           <li class="medcard_aside__item">
             <svg width="24" height="24" class="medcard_aside__item_icon">
               <use href="img/icons/sprite.svg#icon4" />
             </svg>
+            <div class="medcard_aside__description">Исследования</div>
           </li>
           <li class="medcard_aside__item">
             <svg width="24" height="24" class="medcard_aside__item_icon">
               <use href="img/icons/sprite.svg#icon5" />
             </svg>
+            <div class="medcard_aside__description">Активные прикрепления</div>
           </li>
           <li class="medcard_aside__item">
             <svg width="24" height="24" class="medcard_aside__item_icon">
               <use href="img/icons/sprite.svg#icon6" />
             </svg>
+            <div class="medcard_aside__description">История согласования услуг</div>
           </li>
           <li class="medcard_aside__item">
             <svg width="24" height="24" class="medcard_aside__item_icon">
               <use href="img/icons/sprite.svg#icon7" />
             </svg>
+            <div class="medcard_aside__description">Зубы</div>
           </li>
         </ul>
       </div>
@@ -80,7 +87,11 @@
           </li>
           <li class="medcard_content__topinfo_item">
             <div class="medcard_content__topinfo_content">
-              <a href="#">Документы</a>
+              <a href="#" class="medcard_content__docs_link" title="Документы">
+                <svg width="20" height="20" class="medcard_docs__icon">
+                  <use href="img/icons/sprite.svg#file-lines" />
+                </svg>
+              </a>
             </div>
           </li>
         </ul>
@@ -118,268 +129,269 @@
           </div>
 
           <div class="medcard_table__wrap collapse active">
-            <div class="medcard_table__content collapse__item" >
-              <div class="medcard_table__row medcard_table__row--head">
-                <div class="medcard_table__cell">Диагноз</div>
-                <div class="medcard_table__cell">Страховой диагноз</div>
-                <div class="medcard_table__cell">Врач</div>
-                <div class="medcard_table__cell">Прогресс</div>
-                <div class="medcard_table__cell">Изменения</div>
+            <div class="collapse__item">
+              <div class="medcard_table__content" >
+                <div class="medcard_table__row medcard_table__row--head">
+                  <div class="medcard_table__cell">Диагноз</div>
+                  <div class="medcard_table__cell">Страховой диагноз</div>
+                  <div class="medcard_table__cell">Врач</div>
+                  <div class="medcard_table__cell">Прогресс</div>
+                  <div class="medcard_table__cell">Изменения</div>
+                </div>
+
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores ducimus facere iusto laboriosam nemo, neque sit tempore voluptas voluptatibus.</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
+                      <span class="medcard_table__spec">Терапия</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Диагноз">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Холера</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
+                  <div class="medcard_table__cell" data-th="Врач">
+                    <div class="medcard_table__cell_inner">
+                      <div class="medcard_table__doc">Погодина</div>
+                      <div class="medcard_table__spec">Терапия</div>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
+                  <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
+                </div>
               </div>
 
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores ducimus facere iusto laboriosam nemo, neque sit tempore voluptas voluptatibus.</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
-                    <span class="medcard_table__spec">Терапия</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Диагноз">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__diagnosis_code">004</span>
-                    <span class="medcard_table__diagnosis_value">Холера</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Страховой диагноз">Нет</div>
-                <div class="medcard_table__cell" data-th="Врач">
-                  <div class="medcard_table__cell_inner">
-                    <div class="medcard_table__doc">Погодина</div>
-                    <div class="medcard_table__spec">Терапия</div>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Прогресс">0/3</div>
-                <div class="medcard_table__cell" data-th="Изменения">15.02.2023</div>
-              </div>
+              <!-- можно на ссылку поменять, только класс сохранить -->
+              <button class="btn btn--medtable" type="button">
+                Все диагнозы
+                <svg width="18" height="18" class="medcard__btn_icon">
+                  <!--  меняем на caret-up -->
+                  <use href="img/icons/sprite.svg#angle-right" />
+                </svg>
+              </button>
             </div>
           </div>
-
-          <!-- можно на ссылку поменять, только класс сохранить -->
-          <button class="btn btn--medtable" type="button">
-            Все диагнозы
-            <svg width="18" height="18" class="medcard__btn_icon">
-              <!--  меняем на caret-up -->
-              <use href="img/icons/sprite.svg#angle-right" />
-            </svg>
-          </button>
-
         </div>
 
         <!-- collapse__wrap можно будет убрать в реакте. Лишний класс, для нахождения нужного элемента в нативном js -->
@@ -392,6 +404,8 @@
               </svg>
             </button>
             Комментарии
+
+            <!-- Иконку или кнопку покажи, только когда коллапс активен -->
             <svg width="24" height="24" class="medcard_comments__icon">
               <use href="img/icons/sprite.svg#circle-plus" />
             </svg>

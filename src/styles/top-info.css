@@ -11,7 +11,8 @@
 .medcard_content__topinfo_item {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 4px;
+	align-items: center;
+	column-gap: 4px;
 	position: relative;
 }
 
@@ -36,9 +37,26 @@
 	color: #658fa6;
 }
 
+.medcard_docs__icon {
+	fill: #525456;
+	transition: fill 0.2s;
+}
+
+.medcard_docs__icon:hover {
+	fill: #658fa6;
+}
+
+.medcard_content__docs_link {
+	display: flex;
+	align-items: center;
+}
+
 @container topinfo (max-width: 650px) {
 	.medcard_content__topinfo_item {
-		gap: 0;
 		font-size: 1rem;
+	}
+
+	.medcard_content__topinfo_item:not(:last-child)::after {
+		height: 100%;
 	}
 }
