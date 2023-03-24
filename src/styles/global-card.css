@@ -1,8 +1,8 @@
 .medcard {
 	display: grid;
 	grid-template-columns: 40px calc(100% - 48px);
-	grid-template-rows: auto 1fr;
-	grid-template-areas: "aside header" "aside content";
+	grid-template-rows: auto auto 1fr;
+	grid-template-areas: "aside search" "aside header" "aside content";
 	column-gap: 8px;
 	height: calc(100vh - 72px);
 }
@@ -10,6 +10,10 @@
 .medcard_tabs {
 	grid-area: header;
 	padding-top: 8px;
+}
+
+.medcard_search {
+	grid-area: search;
 }
 
 .medcard_content {
