@@ -2,7 +2,7 @@
 	overflow: auto;
 	border: 1px solid #ebebeb;
 	border-radius: 4px;
-	max-height: calc(50vh - 160px);
+	max-height: calc(50vh - 170px);
 }
 
 .medcard_table__row {

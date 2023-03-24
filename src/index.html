@@ -14,7 +14,14 @@
       <!--   поиск в карточке   -->
       <div class="medcard_search">
         <form class="medcard_search__form">
-          <input type="text" class="medcard_search__input">
+          <div class="medcard__input_wrap">
+            <input type="text" class="medcard__input" placeholder="Поиск пациента">
+            <button type="submit" class="medcard__search_btn">
+              <svg width="20" height="20" class="search__icon">
+                <use href="img/icons/sprite.svg#magnifying-glass" />
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
       <!--   верхние табы   -->
