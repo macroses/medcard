@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Vite App</title>
+</head>
+<body>
+<div class="header">
+  <a href="/">home</a>
+  <a href="protocols.html">protocols</a>
+</div>
+<div class="wrapper">
+  <div class="medcard">
+    <!--   поиск в карточке   -->
+    <div class="medcard_search">
+      <form class="medcard_search__form">
+        <div class="medcard__input_wrap">
+          <input type="text" class="medcard__input" placeholder="Поиск пациента">
+          <button type="submit" class="medcard__search_btn">
+            <svg width="20" height="20" class="search__icon">
+              <use href="img/icons/sprite.svg#magnifying-glass" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--   верхние табы   -->
+    <div class="medcard_tabs">
+      <div class="medcard_tabs__item active">Карта</div>
+      <div class="medcard_tabs__item">История</div>
+    </div>
+    <!--   боковое меню   -->
+    <div class="medcard_aside">
+      <ul class="medcard_aside__list">
+        <li class="medcard_aside__item active">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon1" />
+          </svg>
+          <div class="medcard_aside__description">Карта</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon2" />
+          </svg>
+          <div class="medcard_aside__description">Ближайшие приемы</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon3" />
+          </svg>
+          <div class="medcard_aside__description">Протоколы специалистов</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon4" />
+          </svg>
+          <div class="medcard_aside__description">Исследования</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon5" />
+          </svg>
+          <div class="medcard_aside__description">Активные прикрепления</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon6" />
+          </svg>
+          <div class="medcard_aside__description">История согласования услуг</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon7" />
+          </svg>
+          <div class="medcard_aside__description">Зубы</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="medcard_content">
+      <ul class="medcard_content__topinfo">
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_label">Карта №:</div>
+          <div class="medcard_content__topinfo_content">9969438894</div>
+        </li>
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_label">1-е посещение:</div>
+          <div class="medcard_content__topinfo_content">08.02.2023</div>
+        </li>
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_label">Лояльность:</div>
+          <div class="medcard_content__topinfo_content">Повторный</div>
+        </li>
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_content">
+            <a href="#" class="medcard_content__docs_link" title="Документы">
+              <svg width="20" height="20" class="medcard_docs__icon">
+                <use href="img/icons/sprite.svg#file-lines" />
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="medcard_content__info">
+        <div class="medcard_content__avatar">
+          <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_content__avatar_image">
+        </div>
+        <h3 class="medcard_content__profile_name">Гущин Ричард Афанасьевич</h3>
+        <div class="medcard_content__profile_data">
+          <div class="medcard_content__profile_gender">
+            <svg width="20" height="20" class="medcard_content__profile_icon">
+              <use href="img/icons/sprite.svg#mars" />
+            </svg>
+            <!--              <svg width="20" height="20" class="medcard_aside__item_icon">-->
+            <!--                <use href="img/icons/sprite.svg#venus" />-->
+            <!--              </svg>-->
+          </div>
+          <div class="medcard_content__profile_age">08.08.1999 (23 года)</div>
+        </div>
+
+      </div>
+
+      <!-- тогглим класс adaptive_mode, для адптивной таблицы -->
+      <!-- collapse__wrap можно будет убрать в реакте. Лишний класс, для нахождения нужного элемента в нативном js -->
+      <div class="medcard_table collapse__wrap">
+        <div class="medcard__title">
+          <button class="medcard__collapse_btn ">
+            <svg width="20" height="20" class="medcard__collapse_icon">
+              <!--  меняем на caret-up -->
+              <use href="img/icons/sprite.svg#caret-down" />
+            </svg>
+          </button>
+          Протоколы
+        </div>
+
+        <div class="medcard_table__wrap collapse active">
+          <div class="collapse__item">
+            <div class="medcard_table__content protocols" >
+              <div class="medcard_table__row medcard_table__row--head">
+                <div class="medcard_table__cell">Услуга</div>
+                <div class="medcard_table__cell">Доктор</div>
+                <div class="medcard_table__cell">Дата оказания</div>
+                <div class="medcard_table__cell">Протокол</div>
+              </div>
+
+              <!-- active визуально объединит все вложенные и родительские ячейки -->
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Услуга">
+                    <button type="button" class="row__collapse_btn">
+                      <svg width="24" height="24" class="row__collapse_icon">
+                        <!--  меняем на caret-up -->
+                        <use href="img/icons/sprite.svg#angle-down" />
+                      </svg>
+                    </button>
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Вакцинация против краснухи</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Доктор">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
+                      <span class="medcard_table__spec">Терапия</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell" data-th="Дата оказания">23.03.2023</div>
+                  <div class="medcard_table__cell" data-th="Протокол">
+                    <a href="/" class="protocols__link">
+                      <svg width="18" height="18" class="medcard__icon">
+                        <use href="img/icons/sprite.svg#eye" />
+                      </svg>
+                      Протокол
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Вложенный ряд -->
+
+                <div class="medcard_table__row medcard_table__row_inner">
+                  <div class="medcard_table__cell" data-th="Доктор">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__diagnosis_code">004</span>
+                      <span class="medcard_table__diagnosis_value">Вложено</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell">
+                    <div class="medcard_table__cell_inner">
+                      <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
+                      <span class="medcard_table__spec">Терапия</span>
+                    </div>
+                  </div>
+                  <div class="medcard_table__cell">23.03.2023</div>
+                  <div class="medcard_table__cell">
+                    <a href="/" class="protocols__link">
+                      <svg width="18" height="18" class="medcard__icon">
+                        <use href="img/icons/sprite.svg#eye" />
+                      </svg>
+                      Протокол
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

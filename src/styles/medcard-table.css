@@ -2,7 +2,7 @@
 	overflow: auto;
 	border: 1px solid #ebebeb;
 	border-radius: 4px;
-	max-height: calc(50vh - 170px);
+	max-height: calc(50vh - 160px);
 }
 
 .medcard_table__row {
@@ -116,4 +116,59 @@
 .adaptive_mode .medcard_table__cell_inner {
 	display: flex;
 	flex-direction: column;
+}
+
+/* protocols */
+.protocols .medcard_table__row {
+	grid-template-columns: minmax(200px, 1fr) 200px 120px 80px;
+}
+
+.protocols .medcard_table__row_inner {
+
+}
+
+.protocols__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #658fa6;
+}
+
+.protocols__link svg {
+	fill: currentColor;
+}
+
+.protocols__link:hover {
+	color: #4f78ab;
+}
+
+.row__collapse_btn {
+	width: 24px;
+	height: 24px;
+	border: 0;
+	background: transparent;
+	color: #658fa6;
+	cursor: pointer;
+	margin-right: 8px;
+}
+
+.row__collapse_btn svg {
+	fill: currentColor;
+}
+
+.medcard_table__row_inner {
+	margin-left: 60px;
+	position: relative;
+}
+
+.medcard_table__row_inner::before {
+	content: '';
+	position: absolute;
+	left: -35px;
+	height: 25px;
+	width: 30px;
+	border-bottom-left-radius: 4px;
+	border-bottom: 1px solid lightgray;
+	border-left: 1px solid lightgray;
 }
