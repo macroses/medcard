@@ -122,8 +122,8 @@
 	grid-template-columns: minmax(400px, 1fr) 200px 120px 80px;
 }
 
-.protocols .medcard_table__row_inner {
-
+.protocols.medcard_table__content {
+	min-height: calc(82vh - 160px);
 }
 
 .protocols__link {
