@@ -13,8 +13,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        protocols: resolve(__dirname, 'protocols.html'),
+        main: resolve(__dirname, 'src/index.html'),
+        protocols: resolve(__dirname, 'src/protocols.html'),
       },
     },
   },
