@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'src/index.html'),
         protocols: resolve(__dirname, 'src/protocols.html'),
+        protocols_group: resolve(__dirname, 'src/protocols-group.html'),
       },
     },
   },
