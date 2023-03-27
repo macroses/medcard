@@ -1,0 +1,45 @@
+.medcard_checkbox__input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+}
+
+.medcard_checkbox {
+	position: relative;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.medcard_checkbox__value {
+	position: relative;
+	font-size: 1.3rem;
+}
+
+.medcard_checkbox__value:before {
+	content: '';
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: -20px;
+	top: calc(50% - 7px);
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+.medcard_checkbox__input:checked + .medcard_checkbox__value:after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: #658fa6;
+	border-radius: 2px;
+	position: absolute;
+	top: 5px;
+	left: -17px;
+}
+
+.medcard_sort {
+	display: flex;
+	gap: 16px;
+	padding: 8px 0;
+}

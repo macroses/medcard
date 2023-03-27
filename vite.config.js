@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import autoprefixer from 'autoprefixer';
+import { resolve } from 'path';
 
 export default defineConfig({
   css: {
@@ -7,6 +8,14 @@ export default defineConfig({
       plugins: [
         autoprefixer
       ],
+    },
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        protocols: resolve(__dirname, 'protocols.html'),
+      },
     },
   },
   root: 'src',
