@@ -78,6 +78,10 @@
 	font-size: 1.1rem;
 }
 
+.btn--add_comment {
+	margin-left: auto;
+}
+
 .medcard__input_wrap {
 	position: relative;
 	border: 1px solid gray;

@@ -1,5 +1,5 @@
 .protocols .medcard_table__row {
-	grid-template-columns: minmax(400px, 1fr) 200px 120px 80px;
+	grid-template-columns: minmax(400px, 1fr) 200px 120px 70px;
 }
 
 .protocols.medcard_table__content {
@@ -8,19 +8,16 @@
 
 /* group */
 .protocols.group .medcard_table__row--head {
-	grid-template-columns: 200px 70px minmax(400px, 1fr) 200px 120px 80px;
+	grid-template-columns: 200px 70px minmax(400px, 1fr) 200px 120px 70px;
 }
 
 .protocols.group .medcard_table__row--body {
-	grid-template-columns: 200px 70px minmax(400px, 1fr) 200px 120px 80px;
+	grid-template-columns: 200px 70px minmax(400px, 1fr) 200px 120px 70px;
 }
 
 .protocols__link {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	color: #658fa6;
+	margin-inline: auto;
 }
 
 .protocols__link svg {
@@ -32,5 +29,5 @@
 }
 
 .protocols.group .medcard_table__inner .medcard_table__row {
-	grid-template-columns: minmax(625px, 1fr) 200px 120px 80px;
+	grid-template-columns: minmax(625px, 1fr) 200px 120px 70px;
 }
