@@ -73,6 +73,11 @@
 	margin-bottom: 8px;
 }
 
+.btn--sm {
+	padding: 4px 8px;
+	font-size: 1.1rem;
+}
+
 .medcard__input_wrap {
 	position: relative;
 	border: 1px solid gray;
