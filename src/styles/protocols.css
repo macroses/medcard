@@ -3,7 +3,7 @@
 }
 
 .protocols.medcard_table__content {
-	min-height: calc(82vh - 160px);
+	max-height: calc(100vh - 370px);
 }
 
 /* group */
@@ -30,4 +30,5 @@
 
 .protocols.group .medcard_table__inner .medcard_table__row {
 	grid-template-columns: minmax(625px, 1fr) 200px 120px 70px;
+	padding: 0 8px;
 }

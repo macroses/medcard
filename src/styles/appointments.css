@@ -1,0 +1,7 @@
+.appointments .medcard_table__row {
+	grid-template-columns: minmax(400px, 1fr) 200px 120px 100px;
+}
+
+.appointments.medcard_table__content {
+	max-height: calc(100vh - 370px);
+}

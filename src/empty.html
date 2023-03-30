@@ -131,74 +131,16 @@
       <!-- collapse__wrap можно будет убрать в реакте. Лишний класс, для нахождения нужного элемента в нативном js -->
       <div class="medcard_table collapse__wrap">
         <div class="medcard__title">
-          <button class="medcard__collapse_btn ">
-            <svg width="20" height="20" class="medcard__collapse_icon">
-              <!--  меняем на caret-up -->
-              <use href="img/icons/sprite.svg#caret-down" />
-            </svg>
-          </button>
-          Ближайшие приемы
+          Нет данных
         </div>
 
         <div class="medcard_table__wrap collapse active">
           <div class="collapse__item">
-            <div class="medcard_sort">
-              <label class="medcard_checkbox">
-                <input type="checkbox" class="medcard_checkbox__input"/>
-                <span class="medcard_checkbox__value">Мои</span>
-              </label>
-            </div>
-            <div class="medcard_table__content appointments" >
-              <div class="medcard_table__row medcard_table__row--head">
-                <div class="medcard_table__cell">Услуга</div>
-                <div class="medcard_table__cell">Доктор</div>
-                <div class="medcard_table__cell">Дата</div>
-                <div class="medcard_table__cell">Основание</div>
-              </div>
-
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Услуга">
-                  <div class="medcard_table__cell_inner">
-                    <span class="code_icon"></span>
-                    <span class="medcard_table__diagnosis_value">Вакцинация против краснухи</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Доктор">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
-                    <span class="medcard_table__spec">Терапия</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Дата оказания">
-                  <div class="medcard_table__cell_date">23.03.2023</div>
-                  <div class="medcard_table__cell_time">17:05</div>
-                </div>
-                <div class="medcard_table__cell" data-th="Протокол">
-                  Болезнь
-                </div>
-              </div>
-              <div class="medcard_table__row medcard_table__row--body">
-                <div class="medcard_table__cell" data-th="Услуга">
-                  <div class="medcard_table__cell_inner">
-                    <span class="code_icon"></span>
-                    <span class="medcard_table__diagnosis_value">Вакцинация против краснухи</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Доктор">
-                  <div class="medcard_table__cell_inner">
-                    <span class="medcard_table__doc">Погодина Гульдар Раильевна</span>
-                    <span class="medcard_table__spec">Терапия</span>
-                  </div>
-                </div>
-                <div class="medcard_table__cell" data-th="Дата оказания">
-                  <div class="medcard_table__cell_date">23.03.2023</div>
-                  <div class="medcard_table__cell_time">17:05</div>
-                </div>
-                <div class="medcard_table__cell" data-th="Протокол">
-                  Болезнь
-                </div>
-              </div>
-
+            <div class="medcard_table__content empty">
+              <svg width="40" height="40" class="empty__icon">
+                <use href="img/icons/sprite.svg#magnifying-glass-minus" />
+              </svg>
+              <div class="medcard_table__empty-data">Нет данных для отображения</div>
             </div>
           </div>
         </div>

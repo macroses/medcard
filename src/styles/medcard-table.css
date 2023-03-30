@@ -44,6 +44,11 @@
 	column-gap: 4px;
 }
 
+.medcard_table__cell_time {
+	color: #0047BB;
+	font-weight: 600;
+}
+
 .medcard_table__diagnosis_code {
 	color: #0047BB;
 }
