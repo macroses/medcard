@@ -1,0 +1,35 @@
+.history .medcard_table__row {
+	grid-template-columns: 100px 60px minmax(400px, 1fr) 150px 200px;
+}
+
+.history.medcard_table__content {
+	max-height: calc(100vh - 370px);
+}
+
+.history_code {
+	color: purple;
+	font-weight: bold;
+}
+
+.history_count {
+	font-weight: bold;
+	color: #4f78ab;
+}
+
+.medcard_field {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	container: field / inline-size;
+	padding: 8px 0;
+	position: relative;
+	z-index: 5;
+}
+
+
+
+@container field (max-width: 600px) {
+	.dropdown {
+		width: 100%;
+	}
+}
