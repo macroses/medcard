@@ -132,16 +132,52 @@
       <!-- collapse__wrap можно будет убрать в реакте. Лишний класс, для нахождения нужного элемента в нативном js -->
       <div class="medcard_table collapse__wrap">
         <div class="medcard__title">
-          Нет данных
+          <button class="medcard__collapse_btn ">
+            <svg width="20" height="20" class="medcard__collapse_icon">
+              <!--  меняем на caret-up -->
+              <use href="img/icons/sprite.svg#caret-down" />
+            </svg>
+          </button>
+          Исследования
         </div>
 
         <div class="medcard_table__wrap collapse active">
           <div class="collapse__item">
-            <div class="medcard_table__content empty">
-              <svg width="40" height="40" class="empty__icon">
-                <use href="img/icons/sprite.svg#magnifying-glass-minus" />
-              </svg>
-              <div class="medcard_table__empty-data">Нет данных для отображения</div>
+            <div class="medcard_table__content research group" >
+              <div class="medcard_table__row medcard_table__row--head">
+                <div class="medcard_table__cell">Исследование</div>
+                <div class="medcard_table__cell">Последнее</div>
+              </div>
+
+              <!-- active визуально объединит все вложенные и родительские ячейки -->
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Исследование">
+                    <button type="button" class="row__collapse_btn">
+                      <svg width="24" height="24" class="row__collapse_icon">
+                        <!--  меняем на caret-up -->
+                        <use href="img/icons/sprite.svg#angle-down" />
+                      </svg>
+                    </button>
+                    Стоматология ортопедическая
+                  </div>
+                  <div class="medcard_table__cell" data-th="Последнее">Да</div>
+                </div>
+
+                <!-- Вложенный ряд -->
+                <div class="medcard_table__inner">
+                  <div class="medcard_table__row medcard_table__row--head">
+                    <div class="medcard_table__cell">Дата</div>
+                    <div class="medcard_table__cell">Файлов</div>
+                  </div>
+
+                  <div class="medcard_table__row medcard_table__row_inner">
+                    <div class="medcard_table__cell" data-th="Дата">01.03.2023</div>
+                    <div class="medcard_table__cell" data-th="Файлов">1</div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>

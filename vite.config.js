@@ -18,6 +18,7 @@ export default defineConfig({
         protocols_group: resolve(__dirname, 'src/protocols-group.html'),
         appointments: resolve(__dirname, 'src/appointments.html'),
         empty: resolve(__dirname, 'src/empty.html'),
+        research: resolve(__dirname, 'src/research.html'),
       },
     },
   },
