@@ -19,6 +19,7 @@ export default defineConfig({
         appointments: resolve(__dirname, 'src/appointments.html'),
         empty: resolve(__dirname, 'src/empty.html'),
         research: resolve(__dirname, 'src/research.html'),
+        history: resolve(__dirname, 'src/history.html'),
       },
     },
   },
