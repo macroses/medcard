@@ -3,7 +3,7 @@
 }
 
 .history.medcard_table__content {
-	max-height: calc(100vh - 370px);
+	max-height: calc(100vh - 400px);
 }
 
 .history_code {
