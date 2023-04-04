@@ -28,3 +28,14 @@ dropdownInputs.forEach(dropdownInput => {
   })
 })
 
+const btnFull = document.querySelector('.btn-mode')
+const medcard = document.querySelector('.medcard')
+const btnNosearch = document.querySelector('.btn-search')
+
+btnFull.addEventListener('click', () => {
+  medcard.classList.toggle('full-mode')
+})
+
+btnNosearch.addEventListener('click', () => {
+  medcard.classList.toggle('no-search')
+})

@@ -1,0 +1,9 @@
+.no-search.medcard {
+	grid-template-rows: auto 1fr;
+	row-gap: 0;
+	grid-template-areas: "aside header" "aside content";
+}
+
+.no-search .medcard_search {
+	display: none;
+}

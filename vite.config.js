@@ -20,6 +20,7 @@ export default defineConfig({
         empty: resolve(__dirname, 'src/empty.html'),
         research: resolve(__dirname, 'src/research.html'),
         history: resolve(__dirname, 'src/history.html'),
+        info: resolve(__dirname, 'src/info.html'),
       },
     },
   },

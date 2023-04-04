@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Vite App</title>
+</head>
+<body>
+<div class="header">
+  <a href="index.html">home</a>
+  <a href="protocols.html">protocols</a>
+  <a href="protocols-group.html">protocols-group</a>
+  <a href="appointments.html">appointments</a>
+  <a href="empty.html">empty</a>
+  <a href="research.html">research</a>
+  <a href="history.html">history</a>
+</div>
+<div class="wrapper">
+<!-- full-mode полноэкранный -->
+  <div class="medcard full-mode">
+    <!--   поиск в карточке   -->
+    <div class="medcard_search">
+      <form class="medcard_search__form">
+        <div class="medcard__input_wrap">
+          <input type="text" class="medcard__input" placeholder="Поиск пациента">
+          <button type="submit" class="medcard__search_btn">
+            <svg width="20" height="20" class="search__icon">
+              <use href="img/icons/sprite.svg#magnifying-glass" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--   верхние табы   -->
+    <div class="medcard_tabs">
+      <div class="medcard_tabs__item active">Карта</div>
+      <div class="medcard_tabs__item">История</div>
+    </div>
+    <!--   боковое меню   -->
+    <div class="medcard_aside">
+      <ul class="medcard_aside__list">
+        <li class="medcard_aside__item active">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon1" />
+          </svg>
+          <div class="medcard_aside__description">Карта</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon2" />
+          </svg>
+          <div class="medcard_aside__description">Ближайшие приемы</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon3" />
+          </svg>
+          <div class="medcard_aside__description">Протоколы специалистов</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon4" />
+          </svg>
+          <div class="medcard_aside__description">Исследования</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon5" />
+          </svg>
+          <div class="medcard_aside__description">Активные прикрепления</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon6" />
+          </svg>
+          <div class="medcard_aside__description">История согласования услуг</div>
+        </li>
+        <li class="medcard_aside__item">
+          <svg width="24" height="24" class="medcard_aside__item_icon">
+            <use href="img/icons/sprite.svg#icon7" />
+          </svg>
+          <div class="medcard_aside__description">Зубы</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="medcard_content">
+      <ul class="medcard_content__topinfo">
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_label">Карта №:</div>
+          <div class="medcard_content__topinfo_content">9969438894</div>
+        </li>
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_label">1-е посещение:</div>
+          <div class="medcard_content__topinfo_content">08.02.2023</div>
+        </li>
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_label">Лояльность:</div>
+          <div class="medcard_content__topinfo_content">Повторный</div>
+        </li>
+        <li class="medcard_content__topinfo_item">
+          <div class="medcard_content__topinfo_content">
+            <a href="#" class="medcard_content__docs_link" title="Документы">
+              <svg width="20" height="20" class="medcard_docs__icon">
+                <use href="img/icons/sprite.svg#file-lines" />
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="medcard_content__info">
+        <div class="medcard_content__avatar">
+          <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_content__avatar_image">
+        </div>
+        <h3 class="medcard_content__profile_name">Гущин Ричард Афанасьевич</h3>
+        <div class="medcard_content__profile_data">
+          <div class="medcard_content__profile_gender">
+            <svg width="20" height="20" class="medcard_content__profile_icon">
+              <use href="img/icons/sprite.svg#mars" />
+            </svg>
+            <!--              <svg width="20" height="20" class="medcard_aside__item_icon">-->
+            <!--                <use href="img/icons/sprite.svg#venus" />-->
+            <!--              </svg>-->
+          </div>
+          <div class="medcard_content__profile_age">08.08.1999 (23 года)</div>
+        </div>
+
+      </div>
+
+      <div class="medcard_table">
+        1234
+      </div>
+    </div>
+  </div>
+</div>
+<script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

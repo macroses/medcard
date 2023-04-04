@@ -1,0 +1,76 @@
+.full-mode.medcard {
+	grid-template-columns: 180px calc(100% - 188px);
+	grid-template-rows: auto 1fr;
+	grid-template-areas:
+        "aside search"
+        "aside content";
+	gap: 8px;
+}
+
+
+.full-mode .medcard_tabs {
+	display: none;
+}
+
+.full-mode .medcard_aside__item {
+	justify-content: flex-start;
+	padding-inline: 12px;
+	gap: 8px;
+}
+
+.full-mode .medcard_aside__description {
+	position: static;
+	padding: 0;
+	opacity: 1;
+	visibility: visible;
+	background: transparent;
+	box-shadow: none;
+}
+
+.medcard_aside__avatar {
+	display: none;
+	padding: 12px;
+}
+
+.full-mode .medcard_aside__avatar {
+	display: block;
+}
+
+.full-mode .medcard_content__info {
+	grid-template-columns: 1fr;
+}
+
+.full-mode .medcard_content__avatar {
+	display: none;
+}
+
+.full-mode .medcard_content__main {
+	display: flex;
+	gap: 8px;
+}
+
+.full-mode .medcard_table__content {
+	max-height: calc(100vh - 279px);
+}
+
+.full-mode .medcard_comments__list {
+	max-height: calc(100vh - 240px);
+}
+
+.full-mode .medcard_table {
+	flex: 4;
+}
+
+.full-mode .medcard_comments {
+	flex: 2;
+}
+
+.full-mode .medcard_comments__content {
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+
+.full-mode .btn--add_comment {
+	width: 100%;
+	justify-content: center;
+}
