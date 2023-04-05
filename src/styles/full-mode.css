@@ -46,15 +46,16 @@
 
 .full-mode .medcard_content__main {
 	display: flex;
+	flex-grow: 1;
 	gap: 8px;
 }
 
 .full-mode .medcard_table__content {
-	max-height: calc(100vh - 279px);
+	max-height: calc(100vh - 317px);
 }
 
 .full-mode .medcard_comments__list {
-	max-height: calc(100vh - 240px);
+	max-height: calc(100vh - 279px);
 }
 
 .full-mode .medcard_table {
