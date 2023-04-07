@@ -8,11 +8,14 @@
 
 .medcard_aside__item {
 	cursor: pointer;
+	position: relative;
+}
+
+.medcard_aside__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 10px 0;
-	position: relative;
 }
 
 .medcard_aside__item:hover .medcard_aside__description {

@@ -12,7 +12,7 @@
 	display: none;
 }
 
-.full-mode .medcard_aside__item {
+.full-mode .medcard_aside__link {
 	justify-content: flex-start;
 	padding-inline: 12px;
 	gap: 8px;
