@@ -75,3 +75,19 @@
 	width: 100%;
 	justify-content: center;
 }
+
+.full-mode .insurance.medcard_table__content {
+	max-height: calc(100vh - 324px);
+}
+
+.full-mode.no-search .insurance.medcard_table__content {
+	max-height: calc(100vh - 280px);
+}
+
+.full-mode .history.medcard_table__content {
+	max-height: calc(100vh - 350px);
+}
+
+.full-mode.no-search .history.medcard_table__content {
+	max-height: calc(100vh - 310px);
+}

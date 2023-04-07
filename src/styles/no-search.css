@@ -15,3 +15,12 @@
 .no-search.full-mode .medcard_comments__list {
 	max-height: calc(100vh - 240px);
 }
+
+.no-search .insurance.medcard_table__content {
+	max-height: calc(100vh - 287px);
+	min-width: 550px;
+}
+
+.no-search .history.medcard_table__content {
+	max-height: calc(100vh - 370px);
+}

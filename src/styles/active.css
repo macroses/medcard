@@ -1,9 +1,9 @@
 .insurance .medcard_table__row {
-	grid-template-columns: 150px minmax(200px, 1fr) 250px 100px 70px 70px 150px;
+	grid-template-columns: 150px minmax(200px, 1fr) 200px 120px 80px 80px 150px;
 }
 
 .insurance.medcard_table__content {
-	max-height: calc(100vh - 375px);
+	max-height: calc(100vh - 374px);
 	min-width: 550px;
 }
 
