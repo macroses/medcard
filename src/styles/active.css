@@ -1,0 +1,41 @@
+.insurance .medcard_table__row {
+	grid-template-columns: 150px minmax(200px, 1fr) 250px 100px 70px 70px 150px;
+}
+
+.insurance.medcard_table__content {
+	max-height: calc(100vh - 370px);
+	min-width: 550px;
+}
+
+.medcard__copy_icon {
+	cursor: pointer;
+}
+
+.medcard_form {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 8px;
+	min-width: 550px;
+	overflow: hidden;
+}
+
+.medcard_form__item {
+	position: relative;
+}
+
+.medcard_form__input {
+	width: 100%;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid lightgray;
+}
+
+.medcard_form__item .search__icon {
+	position: absolute;
+	right: 8px;
+	top: calc(50% - 10px);
+}
+
+.medcard_form__item--lg {
+	flex-grow: 1;
+}

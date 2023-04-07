@@ -136,16 +136,59 @@
       <!-- collapse__wrap можно будет убрать в реакте. Лишний класс, для нахождения нужного элемента в нативном js -->
       <div class="medcard_table collapse__wrap">
         <div class="medcard__title">
-          Нет данных
+          <button class="medcard__collapse_btn ">
+            <svg width="20" height="20" class="medcard__collapse_icon">
+              <!--  меняем на caret-up -->
+              <use href="img/icons/sprite.svg#caret-down" />
+            </svg>
+          </button>
+          Активные прикрепления
         </div>
 
         <div class="medcard_table__wrap collapse active">
           <div class="collapse__item">
-            <div class="medcard_table__content empty">
-              <svg width="40" height="40" class="empty__icon">
-                <use href="img/icons/sprite.svg#magnifying-glass-minus" />
-              </svg>
-              <div class="medcard_table__empty-data">Нет данных для отображения</div>
+            <div class="medcard_form">
+              <div class="medcard_form__item medcard_form__item--lg">
+                <input type="text" class="medcard_form__input" placeholder="Введите название из таблицы">
+                <svg width="20" height="20" class="search__icon">
+                  <use href="img/icons/sprite.svg#magnifying-glass" />
+                </svg>
+              </div>
+              <div class="medcard_form__item">
+                <input type="date" class="medcard_form__input" placeholder="От">
+              </div>
+              <div class="medcard_form__item">
+                <input type="date" class="medcard_form__input" placeholder="До">
+              </div>
+            </div>
+            <div class="medcard_table__content insurance" >
+              <div class="medcard_table__row medcard_table__row--head">
+                <div class="medcard_table__cell">Страховая</div>
+                <div class="medcard_table__cell">Центры обслуживания</div>
+                <div class="medcard_table__cell">Программа</div>
+                <div class="medcard_table__cell">№ Полиса</div>
+                <div class="medcard_table__cell">Начало</div>
+                <div class="medcard_table__cell">Оконч.</div>
+                <div class="medcard_table__cell">Гарантийное письмо</div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Дата оказания">программа</div>
+                  <div class="medcard_table__cell" data-th="Протокол">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Протокол">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Протокол">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Протокол">Нет</div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

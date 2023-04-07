@@ -21,6 +21,7 @@ export default defineConfig({
         research: resolve(__dirname, 'src/research.html'),
         history: resolve(__dirname, 'src/history.html'),
         info: resolve(__dirname, 'src/info.html'),
+        insurance: resolve(__dirname, 'src/active.html'),
       },
     },
   },
