@@ -42,6 +42,9 @@
     </div>
     <!--   боковое меню   -->
     <div class="medcard_aside">
+      <div class="medcard_aside__avatar">
+        <img src="img/icons/avatar.svg" alt="Аватар" class="medcard_content__avatar_image">
+      </div>
       <ul class="medcard_aside__list">
         <li class="medcard_aside__item active">
           <svg width="24" height="24" class="medcard_aside__item_icon">
@@ -53,13 +56,13 @@
           <svg width="24" height="24" class="medcard_aside__item_icon">
             <use href="img/icons/sprite.svg#icon2" />
           </svg>
-          <div class="medcard_aside__description">Ближайшие приемы</div>
+          <div class="medcard_aside__description">Приемы</div>
         </li>
         <li class="medcard_aside__item">
           <svg width="24" height="24" class="medcard_aside__item_icon">
             <use href="img/icons/sprite.svg#icon3" />
           </svg>
-          <div class="medcard_aside__description">Протоколы специалистов</div>
+          <div class="medcard_aside__description">Протоколы</div>
         </li>
         <li class="medcard_aside__item">
           <svg width="24" height="24" class="medcard_aside__item_icon">
@@ -71,13 +74,13 @@
           <svg width="24" height="24" class="medcard_aside__item_icon">
             <use href="img/icons/sprite.svg#icon5" />
           </svg>
-          <div class="medcard_aside__description">Активные прикрепления</div>
+          <div class="medcard_aside__description">Прикрепления</div>
         </li>
         <li class="medcard_aside__item">
           <svg width="24" height="24" class="medcard_aside__item_icon">
             <use href="img/icons/sprite.svg#icon6" />
           </svg>
-          <div class="medcard_aside__description">История согласования услуг</div>
+          <div class="medcard_aside__description">История</div>
         </li>
         <li class="medcard_aside__item">
           <svg width="24" height="24" class="medcard_aside__item_icon">
@@ -176,16 +179,271 @@
                 <div class="medcard_table__row medcard_table__row--body">
                   <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
                   <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
-                  <div class="medcard_table__cell" data-th="Дата оказания">программа</div>
-                  <div class="medcard_table__cell" data-th="Протокол">
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
                     <svg width="16" height="16" class="medcard__copy_icon">
                       <use href="img/icons/sprite.svg#copy" />
                     </svg>
                     1234567
                   </div>
-                  <div class="medcard_table__cell" data-th="Протокол">01.12.20</div>
-                  <div class="medcard_table__cell" data-th="Протокол">02.12.20</div>
-                  <div class="medcard_table__cell" data-th="Протокол">Нет</div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
+                </div>
+              </div>
+
+              <div class="medcard_table__multilevel_row active">
+                <div class="medcard_table__row medcard_table__row--body">
+                  <div class="medcard_table__cell" data-th="Страховая">Тест_ стандарт</div>
+                  <div class="medcard_table__cell" data-th="Центры обслуживания">Клиника , Клиника Фыв, Филиал Тест</div>
+                  <div class="medcard_table__cell" data-th="Программа">программа</div>
+                  <div class="medcard_table__cell" data-th="№ Полиса">
+                    <svg width="16" height="16" class="medcard__copy_icon">
+                      <use href="img/icons/sprite.svg#copy" />
+                    </svg>
+                    1234567
+                  </div>
+                  <div class="medcard_table__cell" data-th="Начало">01.12.20</div>
+                  <div class="medcard_table__cell" data-th="Оконч.">02.12.20</div>
+                  <div class="medcard_table__cell" data-th="Гарантийное письмо">Нет</div>
                 </div>
               </div>
 
