@@ -22,6 +22,7 @@ export default defineConfig({
         history: resolve(__dirname, 'src/history.html'),
         info: resolve(__dirname, 'src/info.html'),
         insurance: resolve(__dirname, 'src/active.html'),
+        details: resolve(__dirname, 'src/details.html'),
       },
     },
   },

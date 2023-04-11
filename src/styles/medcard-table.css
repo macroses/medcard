@@ -10,7 +10,7 @@
 	font-size: 1rem;
 	padding: 8px;
 	gap: 8px;
-	grid-template-columns: minmax(200px, 1fr) 100px 200px 60px 70px;
+	grid-template-columns: var(--index);
 	color: #525456;
 	border-bottom: 1px solid #ebebeb;
 }
@@ -51,6 +51,7 @@
 
 .medcard_table__diagnosis_code {
 	color: #0047BB;
+	font-weight: 600;
 }
 
 .code_icon{
@@ -68,6 +69,10 @@
 	font-size: 1.6rem;
 	align-items: center;
 	gap: 8px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .medcard__collapse_btn {

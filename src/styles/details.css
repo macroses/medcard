@@ -1,0 +1,53 @@
+.details .medcard_table__row {
+	grid-template-columns: var(--details);
+}
+
+.details.medcard_table__content {
+	max-height: calc(100vh - 400px);
+}
+
+.details.group .medcard_table__inner .medcard_table__row {
+	grid-template-columns: minmax(959px, 1fr) 100px;
+	padding: 0 8px;
+}
+
+.details.group .medcard_table__inner .medcard_table__row_inner {
+	min-width: max-content;
+}
+
+.icon_pay {
+	color: #83c438;
+}
+
+.medcard_mini {
+	padding: 8px 0;
+	font-size: 14px;
+}
+
+.medcard_mini__data {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.medcard_mini__link {
+	color: #4f78ab;
+	display: flex;
+	align-items: center;
+}
+
+.medcard_mini__count {
+	color: #4f78ab;
+}
+
+.medcard_mini__author {
+	margin-left: auto;
+}
+
+.medcard_comments__author--mini {
+	/*display: flex;*/
+	margin-left: auto;
+	/*flex-direction: column;*/
+	margin-bottom: -16px;
+}

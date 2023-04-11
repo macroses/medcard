@@ -1,3 +1,5 @@
+@import "variables.css";
+
 @import "default.css";
 @import "global-card.css";
 @import "medcard-content.css";
@@ -17,3 +19,4 @@
 @import "full-mode.css";
 @import "no-search.css";
 @import "active.css";
+@import "details.css";

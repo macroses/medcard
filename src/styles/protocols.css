@@ -32,3 +32,7 @@
 	grid-template-columns: minmax(625px, 1fr) 200px 120px 70px;
 	padding: 0 8px;
 }
+
+.protocols.group .medcard_table__inner .medcard_table__row_inner {
+	min-width: max-content;
+}
