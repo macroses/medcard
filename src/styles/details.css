@@ -22,6 +22,7 @@
 .medcard_mini {
 	padding: 8px 0;
 	font-size: 14px;
+	container: mini / inline-size;
 }
 
 .medcard_mini__data {
@@ -46,8 +47,25 @@
 }
 
 .medcard_comments__author--mini {
-	/*display: flex;*/
 	margin-left: auto;
-	/*flex-direction: column;*/
 	margin-bottom: -16px;
+}
+
+.medcard_mini__value {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+@container mini (max-width: 600px) {
+	.medcard_comments__author--mini {
+		order: -1;
+		margin-left: 0;
+		margin-bottom: 8px;
+	}
+
+	.medcard_mini__data {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
