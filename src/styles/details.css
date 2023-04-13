@@ -28,8 +28,14 @@
 .medcard_mini__data {
 	display: flex;
 	gap: 8px;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 12px;
+}
+
+.medcard_mini__item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
 
 .medcard_mini__link {
@@ -49,6 +55,7 @@
 .medcard_comments__author--mini {
 	margin-left: auto;
 	margin-bottom: -16px;
+	align-items: center;
 }
 
 .medcard_mini__value {
@@ -68,4 +75,24 @@
 		flex-direction: column;
 		align-items: flex-start;
 	}
+}
+
+/* detail item */
+.negative, .positive {
+	background: #db2828;
+	color: #fff;
+	padding: 0 12px;
+	border-radius: 4px;
+	display: inline-block;
+	width: fit-content;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.positive {
+	background-color: #21ba45;
+}
+
+.medcard_protocol__item p {
+	margin: 0;
 }

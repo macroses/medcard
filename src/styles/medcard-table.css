@@ -1,3 +1,13 @@
+.medcard_table {
+	display: grid;
+	grid-auto-rows: auto minmax(100px, 1fr);
+}
+
+.medcard_table__wrap {
+	display: grid;
+	grid-template-rows: minmax(100px, 1fr);
+}
+
 .medcard_table__content {
 	overflow: auto;
 	border: 1px solid #ebebeb;

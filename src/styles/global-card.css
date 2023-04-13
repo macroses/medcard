@@ -1,14 +1,15 @@
 .medcard {
 	display: grid;
 	grid-template-columns: 40px calc(100% - 48px);
-	grid-template-rows: auto auto 1fr;
+	/*grid-template-rows: auto auto 1fr;*/
 	grid-template-areas: "aside search" "aside header" "aside content";
 	column-gap: 8px;
 	height: calc(100vh - 72px);
+	grid-template-rows: auto auto minmax(100px, 1fr);
 }
 
 .medcard_tabs {
-	grid-area: header;
+	/*grid-area: header;*/
 	padding-top: 8px;
 }
 
@@ -18,13 +19,15 @@
 }
 
 .medcard_content {
-	grid-area: content;
+	/*grid-area: content;*/
 	border: 1px solid #ebebeb;
 	padding: 8px;
 	border-top-left-radius: 4px;
-	display: flex;
-	flex-direction: column;
+	/*display: flex;*/
+	/*flex-direction: column;*/
 	gap: 8px;
+	display: grid;
+	grid-auto-rows: auto auto minmax(100px, 1fr);
 }
 
 .medcard_aside {
@@ -46,6 +49,9 @@
 	min-height: 0;
 	overflow: auto;
 	transition: visibility 1s;
+	display: grid;
+	grid-template-columns: 1fr !important;
+	grid-template-rows: auto auto minmax(100px, 1fr);
 }
 
 .btn {
