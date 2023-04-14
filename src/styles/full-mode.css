@@ -7,6 +7,42 @@
 	gap: 8px;
 }
 
+.full-mode .medcard_content {
+	max-height: calc(100vh - 120px);
+}
+
+.full-mode .medcard_content__main.index {
+	grid-template-columns: 4fr 3fr;
+	grid-template-rows: minmax(100px, 2fr) minmax(100px, 3fr);
+	grid-template-areas: 'appointments comments' 'index-table comments';
+}
+
+.index_appointments {
+	display: none;
+}
+
+.full-mode .index_appointments {
+	display: grid;
+	grid-area: appointments;
+	grid-template-rows: minmax(50px, 1fr);
+}
+
+.full-mode .medcard_index__appointments {
+	overflow: auto;
+}
+
+.full-mode .index_appointments .medcard_table {
+	overflow: visible;
+}
+
+.full-mode .medcard_table.index {
+	grid-area: index-table;
+}
+
+.full-mode .medcard_comments {
+	grid-area: comments;
+}
+
 
 .full-mode .medcard_tabs {
 	display: none;
@@ -44,26 +80,8 @@
 	display: none;
 }
 
-.full-mode .medcard_content__main {
-	display: flex;
-	flex-grow: 1;
-	gap: 8px;
-}
-
-.full-mode .medcard_table__content {
-	max-height: calc(100vh - 317px);
-}
-
-.full-mode .medcard_comments__list {
-	max-height: calc(100vh - 279px);
-}
-
 .full-mode .medcard_table {
 	flex: 4;
-}
-
-.full-mode .medcard_comments {
-	flex: 2;
 }
 
 .full-mode .medcard_comments__content {
@@ -74,20 +92,4 @@
 .full-mode .btn--add_comment {
 	width: 100%;
 	justify-content: center;
-}
-
-.full-mode .insurance.medcard_table__content {
-	max-height: calc(100vh - 324px);
-}
-
-.full-mode.no-search .insurance.medcard_table__content {
-	max-height: calc(100vh - 280px);
-}
-
-.full-mode .history.medcard_table__content {
-	max-height: calc(100vh - 350px);
-}
-
-.full-mode.no-search .history.medcard_table__content {
-	max-height: calc(100vh - 310px);
 }

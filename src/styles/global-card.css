@@ -91,6 +91,18 @@
 .btn--sm {
 	padding: 4px 8px;
 	font-size: 1.1rem;
+	border-radius: 3px;
+}
+
+.btn--blue {
+	background-color: #0047BB;
+	opacity: 0.8;
+	color: #fff;
+}
+
+.btn--blue:hover {
+	background-color: #0047BB;
+	opacity: 1;
 }
 
 .btn--add_comment {

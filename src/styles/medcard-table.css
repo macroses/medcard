@@ -14,6 +14,25 @@
 	border-radius: 4px;
 }
 
+.medcard_index__appointments_title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 2px;
+}
+
+.medcard_index__appointments_item {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.medcard_index__date {
+	font-weight: 600;
+}
+
+.medcard_index__date_duration {
+	color: #4f78ab;
+}
+
 .medcard_table__row {
 	display: grid;
 	font-size: 1rem;
