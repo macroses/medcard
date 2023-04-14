@@ -2,8 +2,8 @@
 	grid-template-columns: minmax(400px, 1fr) 120px;
 }
 
-.research.medcard_table__content {
-	max-height: calc(100vh - 370px);
+.research .collapse__item {
+	grid-template-rows: minmax(100px, 1fr);
 }
 
 .research.group .medcard_table__row--head {

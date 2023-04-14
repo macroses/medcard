@@ -2,8 +2,8 @@
 	grid-template-columns: 100px 60px minmax(400px, 1fr) 150px 200px;
 }
 
-.history.medcard_table__content {
-	max-height: calc(100vh - 400px);
+.history .collapse__item {
+	grid-template-rows: auto 1fr;
 }
 
 .history_code {

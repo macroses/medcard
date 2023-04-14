@@ -3,6 +3,20 @@
 	cursor: pointer;
 }
 
+.medcard_content__main.index {
+	display: grid;
+	grid-template-rows:  minmax(100px, 1fr) minmax(100px, 1fr);
+	gap: 12px;
+}
+
+.medcard_comments {
+	display: grid;
+}
+
+.medcard_content__main.index .medcard_table {
+	overflow: auto;
+}
+
 .medcard_comments__item {
 	container: comment / inline-size;
 }
@@ -65,7 +79,7 @@
 
 .medcard_comments__list {
 	overflow: auto;
-	max-height: calc(50vh - 238px);
+	/*max-height: calc(50vh - 238px);*/
 }
 
 .medcard_comments__input {

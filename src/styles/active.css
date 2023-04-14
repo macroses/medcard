@@ -3,8 +3,11 @@
 }
 
 .insurance.medcard_table__content {
-	max-height: calc(100vh - 374px);
 	min-width: 550px;
+}
+
+.insurance .collapse__item {
+	grid-template-rows: auto 1fr;
 }
 
 .medcard__copy_icon {

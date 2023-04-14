@@ -2,8 +2,12 @@
 	grid-template-columns: var(--details);
 }
 
-.details.medcard_table__content {
-	max-height: calc(100vh - 400px);
+.details .collapse__item {
+	grid-template-rows: auto auto minmax(100px, 1fr);
+}
+
+.details-item .collapse__item {
+	grid-template-rows: auto auto minmax(100px, 1fr);
 }
 
 .details.group .medcard_table__inner .medcard_table__row {

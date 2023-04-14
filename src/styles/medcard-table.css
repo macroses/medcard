@@ -12,7 +12,6 @@
 	overflow: auto;
 	border: 1px solid #ebebeb;
 	border-radius: 4px;
-	max-height: calc(50vh - 160px);
 }
 
 .medcard_table__row {
@@ -77,7 +76,6 @@
 .medcard__title {
 	display: flex;
 	font-size: 1.6rem;
-	align-items: center;
 	gap: 8px;
 	width: 100%;
 	overflow: hidden;
@@ -94,6 +92,7 @@
 	display: flex;
 	border-radius: 50%;
 	place-items: center;
+	margin-top: 2px;
 }
 
 .medcard__collapse_btn:hover {
