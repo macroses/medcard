@@ -11,6 +11,10 @@
 	max-height: calc(100vh - 120px);
 }
 
+.full-mode.no-search .medcard_content {
+	max-height: calc(100vh - 80px);
+}
+
 .full-mode .medcard_content__main.index {
 	grid-template-columns: 4fr 3fr;
 	grid-template-rows: minmax(100px, 2fr) minmax(100px, 3fr);

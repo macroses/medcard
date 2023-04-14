@@ -1,26 +1,9 @@
 .no-search.medcard {
-	grid-template-rows: auto 1fr;
-	row-gap: 0;
-	grid-template-areas: "aside header" "aside content";
+	grid-template-rows: auto minmax(100px, 1fr);
 }
 
 .no-search .medcard_search {
-	display: none;
-}
-
-.no-search.full-mode .medcard_table__content {
-	max-height: calc(100vh - 279px);
-}
-
-.no-search.full-mode .medcard_comments__list {
-	max-height: calc(100vh - 240px);
-}
-
-.no-search .insurance.medcard_table__content {
-	max-height: calc(100vh - 287px);
-	min-width: 550px;
-}
-
-.no-search .history.medcard_table__content {
-	max-height: calc(100vh - 370px);
+	visibility: hidden;
+	position: absolute;
+	opacity: 0;
 }
