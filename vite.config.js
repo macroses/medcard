@@ -23,6 +23,7 @@ export default defineConfig({
         insurance: resolve(__dirname, 'src/active.html'),
         details: resolve(__dirname, 'src/details.html'),
         detailsItem: resolve(__dirname, 'src/details-item.html'),
+        teeth: resolve(__dirname, 'src/teeth.html'),
       },
     },
   },

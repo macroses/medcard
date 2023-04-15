@@ -1,0 +1,62 @@
+[class^="Tooth_segment"] {
+	stroke: #000;
+	fill: #fff;
+}
+
+[class^="Tooth_toothSide"] {
+	height: 130px;
+	width: 40px;
+}
+
+[class^='Tooth_toothSurface'] {
+	width: 45px;
+	height: 52px;
+}
+
+.teeth_block__wrap {
+	grid-template-rows: auto minmax(100px, 1fr);
+	border-bottom: 1px solid #ebebeb;
+}
+
+.medcard_content__main.teeth_block {
+	display: grid;
+	grid-template-rows: minmax(100px, 4fr) minmax(100px, 3fr);
+	gap: 12px;
+}
+
+.teeth {
+	display: grid;
+	gap: 20px;
+	overflow: auto;
+}
+
+.teeth__list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.teeth__list_reverse .teeth__item {
+	flex-direction: column-reverse;
+}
+
+.teeth__list_reverse .teeth__item .teeth__item_side {
+	transform: scaleY(-1);
+}
+
+.teeth__list_reverse .teeth__item.teeth__item--both .teeth__item_side{
+	transform: scale(-1, -1);
+}
+
+.teeth__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.teeth__item_number {
+	font-weight: 600;
+}
+
+.teeth__item:hover svg {
+	stroke-width: 2px;
+}
