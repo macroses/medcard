@@ -5,6 +5,10 @@
 	position: relative;
 }
 
+.dropdown--sm {
+	flex: 0 1 auto;
+}
+
 .dropdown__label {
 	font-size: 13px;
 	font-weight: bold;

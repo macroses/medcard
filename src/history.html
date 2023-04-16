@@ -26,8 +26,30 @@
   <div class="medcard">
     <!--   верхние табы   -->
     <div class="medcard_tabs">
-      <div class="medcard_tabs__item active">Карта</div>
-      <div class="medcard_tabs__item">История</div>
+      <div class="medcard_tabs__item">
+        <svg width="16" height="16" class="medcard_icon">
+          <use href="img/icons/sprite.svg#user" />
+        </svg>
+        Пациент
+      </div>
+      <div class="medcard_tabs__item active">
+        <svg width="16" height="16" class="medcard_icon">
+          <use href="img/icons/sprite.svg#phone-volume" />
+        </svg>
+        79876543211
+      </div>
+      <div class="medcard_tabs__item">
+        <svg width="16" height="16" class="medcard_icon">
+          <use href="img/icons/sprite.svg#phone" />
+        </svg>
+        Иванов И.И.
+      </div>
+      <div class="medcard_tabs__item">
+        <svg width="16" height="16" class="medcard_icon">
+          <use href="img/icons/sprite.svg#phone-volume" />
+        </svg>
+        Иванов И.И.
+      </div>
     </div>
     <!--   боковое меню   -->
     <div class="medcard_aside">
@@ -176,7 +198,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="dropdown">
+              <div class="dropdown dropdown--sm">
                 <label class="dropdown__label">Только оказанные</label>
                 <input type="text" class="dropdown__input" value="Не важно">
                 <div class="dropdown__list_wrap">

@@ -22,6 +22,16 @@
 	overflow: hidden;
 }
 
+.insurance {
+	container: form-insurance / inline-size;
+}
+
+@container form-insurance (max-width: 620px) {
+	.medcard_form {
+		flex-direction: column;
+	}
+}
+
 .medcard_form__item {
 	position: relative;
 }

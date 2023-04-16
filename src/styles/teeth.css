@@ -60,3 +60,13 @@
 .teeth__item:hover svg {
 	stroke-width: 2px;
 }
+
+.row__hovered:hover {
+	cursor: pointer;
+	background-color: #f3f3f3;
+}
+
+.row__chosen {
+	box-shadow: inset 4px 0 0 0 #0047BB;
+	pointer-events: none;
+}

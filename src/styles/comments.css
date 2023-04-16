@@ -24,57 +24,31 @@
 .medcard_comments__content {
 	padding: 8px;
 	margin-top: 4px;
-	display: grid;
-	grid-template-columns: auto 1fr;
-	gap: 4px 8px;
 	border: 1px solid #ebebeb;
 	border-radius: 4px;
 }
 
-@container comment (max-width: 500px) {
-	.medcard_comments__content {
-		display: block;
-	}
-}
 
 .medcard_comments__date {
-	font-size: 1.1rem;
-	font-weight: bold;
-	grid-column: span 2;
+	background: #4f78ab;
+	padding: 2px;
+	color: #fff;
+	border-radius: 2px;
 }
 
 .medcard_comments__value {
 	font-size: 1.2rem;
 }
 
-.medcard_comments__author {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	column-gap: 8px;
-}
-
-.medcard_comments__avatar {
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	overflow: hidden;
-	grid-row: span 2;
-}
-
-.medcard_comments__avatar_image {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-
 .medcard_comments__name {
 	font-size: 1.1rem;
 	font-weight: bold;
+	color: #4f78ab;
 }
 
 .medcard_comments__type {
 	font-size: 1.1rem;
-	color: #3470A1;
+	color: #4f78ab;
 }
 
 .medcard_comments__list {
