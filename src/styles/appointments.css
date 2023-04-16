@@ -5,3 +5,11 @@
 .appointments .collapse__item {
 	grid-template-rows: auto minmax(100px, 1fr);
 }
+
+.index_appointments .appointments .medcard_table__row {
+	grid-template-columns: minmax(400px, 1fr) 200px 120px 100px 120px;
+}
+
+.index_appointments .appointments .collapse__item {
+	grid-template-rows: minmax(100px, 1fr);
+}

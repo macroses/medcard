@@ -5,7 +5,7 @@
 
 .medcard_content__main.index {
 	display: grid;
-	grid-template-rows:  minmax(100px, 7fr) minmax(100px, 4fr);
+	grid-template-rows: minmax(100px, 7fr) minmax(100px, 4fr);
 	gap: 12px;
 }
 
