@@ -192,3 +192,35 @@
 	border-bottom: 1px solid lightgray;
 	border-left: 1px solid lightgray;
 }
+
+.medcard_search {
+	position: absolute;
+	height: 36px;
+	width: calc(100% - 8px);
+	left: 8px;
+	top: 8px;
+	padding-right: 8px;
+	z-index: 2;
+	opacity: 0;
+	transform: scaleX(0);
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.medcard_search.active {
+	opacity: 1;
+	transform: scaleX(1);
+}
+
+.medcard_search__input {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+}
+
+.medcard_search .search__icon {
+	position: absolute;
+	right: 17px;
+	top: 8px;
+}

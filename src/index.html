@@ -20,29 +20,36 @@
     <a href="details.html">details</a>
     <a href="details-item.html">details-item</a>
     <button class="btn-mode">full-mode</button>
-    <button class="btn-search">no-search</button>
   </div>
   <div class="wrapper">
-<!--  full-mode для полноэкранного режима, no-search убрать поиск  -->
-<!--  no-topinfo скрыть верхнюю часть  -->
+<!--  full-mode для полноэкранного режима  -->
     <div class="medcard">
-      <!--   поиск в карточке   -->
-      <div class="medcard_search">
-        <form class="medcard_search__form">
-          <div class="medcard__input_wrap">
-            <input type="text" class="medcard__input" placeholder="Поиск пациента">
-            <button type="submit" class="medcard__search_btn">
-              <svg width="20" height="20" class="search__icon">
-                <use href="img/icons/sprite.svg#magnifying-glass" />
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
       <!--   верхние табы   -->
       <div class="medcard_tabs">
-        <div class="medcard_tabs__item active">Карта</div>
-        <div class="medcard_tabs__item">История</div>
+        <div class="medcard_tabs__item active">
+          <svg width="16" height="16" class="medcard_icon">
+            <use href="img/icons/sprite.svg#user" />
+          </svg>
+          Пациент
+        </div>
+        <div class="medcard_tabs__item phone-call">
+          <svg width="16" height="16" class="medcard_icon">
+            <use href="img/icons/sprite.svg#phone-volume" />
+          </svg>
+          79876543211
+        </div>
+        <div class="medcard_tabs__item">
+          <svg width="16" height="16" class="medcard_icon">
+            <use href="img/icons/sprite.svg#phone" />
+          </svg>
+          Иванов И.И.
+        </div>
+        <div class="medcard_tabs__item">
+          <svg width="16" height="16" class="medcard_icon">
+            <use href="img/icons/sprite.svg#phone-volume" />
+          </svg>
+          Иванов И.И.
+        </div>
       </div>
       <!--   боковое меню   -->
       <div class="medcard_aside">
@@ -95,21 +102,27 @@
               <svg width="24" height="24" class="medcard_aside__item_icon">
                 <use href="img/icons/sprite.svg#icon6" />
               </svg>
-              <div class="medcard_aside__description">История</div>
+              <div class="medcard_aside__description">Согласования</div>
             </a>
           </li>
           <li class="medcard_aside__item">
-            <a href="/" class="medcard_aside__link">
+            <a href="teeth.html" class="medcard_aside__link">
               <svg width="24" height="24" class="medcard_aside__item_icon">
                 <use href="img/icons/sprite.svg#icon7" />
               </svg>
-              <div class="medcard_aside__description">Зубы</div>
+              <div class="medcard_aside__description">Стоматология</div>
             </a>
           </li>
         </ul>
       </div>
 
       <div class="medcard_content">
+        <div class="medcard_search">
+          <input type="text" class="medcard_search__input">
+          <svg width="20" height="20" class="search__icon">
+            <use href="img/icons/sprite.svg#magnifying-glass" />
+          </svg>
+        </div>
         <ul class="medcard_content__topinfo">
           <li class="medcard_content__topinfo_item">
             <div class="medcard_content__topinfo_label">Карта №:</div>
@@ -131,6 +144,11 @@
                 </svg>
               </a>
             </div>
+          </li>
+          <li class="medcard_content__topinfo_item">
+            <svg width="20" height="20" class="search__icon search__icon_toggle">
+              <use href="img/icons/sprite.svg#magnifying-glass" />
+            </svg>
           </li>
         </ul>
 
@@ -248,7 +266,7 @@
                   <use href="img/icons/sprite.svg#caret-down" />
                 </svg>
               </button>
-              Активные диагнозы
+              Диагнозы
             </div>
 
             <div class="medcard_table__wrap collapse active">
@@ -256,7 +274,7 @@
                 <div class="medcard_sort">
                   <label class="medcard_checkbox">
                     <input type="checkbox" class="medcard_checkbox__input"/>
-                    <span class="medcard_checkbox__value">Все диагнозы</span>
+                    <span class="medcard_checkbox__value">Активные</span>
                   </label>
                 </div>
                 <div class="medcard_table__content" >

@@ -8,7 +8,7 @@
 }
 
 .full-mode .medcard_content {
-	max-height: calc(100vh - 120px);
+	max-height: calc(100vh - 80px);
 }
 
 .full-mode.no-search .medcard_content {

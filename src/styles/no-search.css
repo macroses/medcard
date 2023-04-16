@@ -1,9 +1,9 @@
-.no-search.medcard {
-	grid-template-rows: auto minmax(100px, 1fr);
-}
+/*.no-search.medcard {*/
+/*	grid-template-rows: auto minmax(100px, 1fr);*/
+/*}*/
 
-.no-search .medcard_search {
-	visibility: hidden;
-	position: absolute;
-	opacity: 0;
-}
+/*.no-search .medcard_search {*/
+/*	visibility: hidden;*/
+/*	position: absolute;*/
+/*	opacity: 0;*/
+/*}*/
