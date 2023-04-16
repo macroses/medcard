@@ -26,19 +26,6 @@
   <!--  full-mode для полноэкранного режима, no-search убрать поиск  -->
   <!--  no-topinfo скрыть верхнюю часть  -->
   <div class="medcard">
-    <!--   поиск в карточке   -->
-    <div class="medcard_search">
-      <form class="medcard_search__form">
-        <div class="medcard__input_wrap">
-          <input type="text" class="medcard__input" placeholder="Поиск пациента">
-          <button type="submit" class="medcard__search_btn">
-            <svg width="20" height="20" class="search__icon">
-              <use href="img/icons/sprite.svg#magnifying-glass" />
-            </svg>
-          </button>
-        </div>
-      </form>
-    </div>
     <!--   верхние табы   -->
     <div class="medcard_tabs">
       <div class="medcard_tabs__item active">Карта</div>
@@ -110,6 +97,12 @@
     </div>
 
     <div class="medcard_content">
+      <div class="medcard_search">
+        <input type="text" class="medcard_search__input">
+        <svg width="20" height="20" class="search__icon">
+          <use href="img/icons/sprite.svg#magnifying-glass" />
+        </svg>
+      </div>
       <ul class="medcard_content__topinfo">
         <li class="medcard_content__topinfo_item">
           <div class="medcard_content__topinfo_label">Карта №:</div>
@@ -131,6 +124,11 @@
               </svg>
             </a>
           </div>
+        </li>
+        <li class="medcard_content__topinfo_item">
+          <svg width="20" height="20" class="search__icon search__icon_toggle">
+            <use href="img/icons/sprite.svg#magnifying-glass" />
+          </svg>
         </li>
       </ul>
 
