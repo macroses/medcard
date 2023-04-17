@@ -60,3 +60,36 @@
 		height: 100%;
 	}
 }
+
+.medcard_content__profile_money {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	color: red;
+	font-style: normal;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.medcard_content__profile_phone {
+	display: inline-flex;
+	align-items: center;
+	color: green;
+	font-weight: bold;
+	gap: 4px;
+}
+
+.medcard_content__profile_phone svg {
+	fill: green;
+}
+
+.medcard_content__profile_relative {
+	font-weight: bold;
+	font-style: normal;
+	color: #000;
+}
+
+.medcard_content__profile_relative_name {
+	font-weight: normal;
+	color: #4f78ab;
+}

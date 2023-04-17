@@ -32,6 +32,10 @@
 	color: #658fa6;
 }
 
+.medcard_content__profile_data.additional {
+	display: none;
+}
+
 .medcard_content__profile_name {
 	font-size: 1.6rem;
 	font-weight: 600;
