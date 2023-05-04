@@ -62,29 +62,30 @@
 }
 
 .medcard_content__profile_money {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	gap: 4px;
 	color: red;
 	font-style: normal;
-	font-weight: bold;
+	font-size: 13px;
 	margin-right: 20px;
 }
 
 .medcard_content__profile_phone {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
-	color: green;
-	font-weight: bold;
+	font-size: 13px;
+	color: #000;
+	margin-bottom: 70px;
 	gap: 4px;
 }
 
-.medcard_content__profile_phone svg {
-	fill: green;
-}
+/*.medcard_content__profile_phone svg {*/
+/*	fill: green;*/
+/*}*/
 
 .medcard_content__profile_relative {
-	font-weight: bold;
+	font-size: 13px;
 	font-style: normal;
 	color: #000;
 }

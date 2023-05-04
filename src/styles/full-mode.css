@@ -54,9 +54,24 @@
 
 .full-mode .medcard_content__info {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
-	height: 156px;
+	align-items: flex-start;
+	min-height: 156px;
+}
+
+/*.full-mode .medcard_content__profile_data {*/
+/*	margin-top: 10px;*/
+/*}*/
+
+.full-mode .medcard_content__profile_age {
+	margin-top: 7px;
+}
+
+.full-mode .medcard_content__info-left {
+	display: flex;
+	width: auto;
+	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .full-mode .medcard_content__avatar {
@@ -87,4 +102,5 @@
 
 .full-mode .medcard_content__profile_data.additional {
 	display: block;
+	width: 100%;
 }
